@@ -13,4 +13,9 @@ export default Vue.extend({
 
 <style lang="sass" scoped>
 @import "../assets/sass/global"
+
+.detailPage
+  width: 100vw
+  overflow-x: hidden
+  min-height: 100vh
 </style>

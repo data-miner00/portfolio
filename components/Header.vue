@@ -52,6 +52,8 @@ export default Vue.extend({
   justify-content: space-between
   align-items: center
   position: relative
+  width: 100vw
+
   &__dummy
     height: 17px
     width: 27px
@@ -92,7 +94,9 @@ export default Vue.extend({
       font-size: 0.5em
       margin-top: auto
 
-
+// @media screen and (min-width: 375px)
+//   .header
+//     padding: 0
 //   &__nav-links
 //     width: 350px
 //     display: flex
