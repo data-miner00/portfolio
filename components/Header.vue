@@ -52,7 +52,6 @@ export default Vue.extend({
   justify-content: space-between
   align-items: center
   position: relative
-  width: 100vw
 
   &__dummy
     height: 17px
@@ -94,9 +93,40 @@ export default Vue.extend({
       font-size: 0.5em
       margin-top: auto
 
-// @media screen and (min-width: 375px)
-//   .header
-//     padding: 0
+@media screen and (min-width: 375px)
+  .header
+    &__nav-links
+      width: 250px
+
+@media screen and (min-width: 620px)
+  .header
+    &__nav-links
+      &__made-by
+        font-size: 0.7em
+
+@media screen and (min-width: 960px)
+  .header
+    width: 100%
+    &__dummy
+      display: none
+
+    &__burger
+      display: none
+
+    &__nav-links
+      // margin-left: auto
+      position: static
+      height: fit-content
+      width: 350px
+      flex-direction: row
+      padding: 0
+      background: none
+      justify-content: space-between
+      transform: translate(0)
+      &__logo
+        display: none
+      &__made-by
+        display: none
 //   &__nav-links
 //     width: 350px
 //     display: flex
