@@ -146,6 +146,10 @@ export default Vue.extend({
     &__illustration
       height: 100%
       background: #eee
+      background-image: url(~assets/images/background.jpg)
+      background-size: cover
+      background-position: center
+      background-repeat: no-repeat
 
     &__footer
       &__socials
