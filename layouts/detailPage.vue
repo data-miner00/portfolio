@@ -15,7 +15,8 @@ export default Vue.extend({
 @import "../assets/sass/global"
 
 .detailPage
-  width: 100vw
+  position: relative
   overflow-x: hidden
   min-height: 100vh
+  padding-top: 100px
 </style>
