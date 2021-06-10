@@ -51,7 +51,11 @@ export default Vue.extend({
   padding: 0 5%
   justify-content: space-between
   align-items: center
-  position: relative
+  position: fixed
+  background: #fbfaf5
+  top: 0
+  left: 0
+  width: 100vw
 
   &__dummy
     height: 17px
@@ -61,12 +65,12 @@ export default Vue.extend({
       width: 55px
 
   &__nav-links
-    position: absolute
+    position: fixed
     top: 0
     right: 0
     height: 100vh
     width: 200px
-    background: #eee
+    background: #fbfaf5
     transform: translateX(100%)
     display: flex
     flex-direction: column
@@ -74,7 +78,8 @@ export default Vue.extend({
     padding: 30px 10%
     row-gap: 15px
     text-align: right
-
+    border-left: 1px solid #eee
+    z-index: 10
     &__logo
       margin-bottom: 15px
       &__img
@@ -107,6 +112,7 @@ export default Vue.extend({
 @media screen and (min-width: 960px)
   .header
     width: 100%
+    padding: 0 20%
     &__dummy
       display: none
 
@@ -114,7 +120,7 @@ export default Vue.extend({
       display: none
 
     &__nav-links
-      // margin-left: auto
+      border-left: none
       position: static
       height: fit-content
       width: 350px
@@ -127,8 +133,4 @@ export default Vue.extend({
         display: none
       &__made-by
         display: none
-//   &__nav-links
-//     width: 350px
-//     display: flex
-//     justify-content: space-between
 </style>
