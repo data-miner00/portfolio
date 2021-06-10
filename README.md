@@ -14,5 +14,21 @@ My personal portfolio website with Nuxt.js
   -
 - Contact
 - Skills
+  - Technical
 - Hobby
+  - Reading
+  - Learning
+  - Playing
 - Projects
+  - Discord bot
+  - FYP
+  - Blog
+  - New Tab
+  - Event
+- Education
+  - SMK Mutahir
+  - SMK Munshi Abdullah
+  - UTAR
+- Goals
+  - Contribute to open-source community
+  - Partake in JLPT exam
