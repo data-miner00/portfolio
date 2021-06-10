@@ -121,6 +121,7 @@ export default Vue.extend({
       margin-bottom: 20px
 
     &__craft
+      font-size: 0.75em
       span
         color: pink
 
@@ -158,4 +159,7 @@ export default Vue.extend({
 @media screen and (min-width: 960px)
   .home
     grid-template-columns: 350px 1fr
+    &__footer
+      &__craft
+        font-size: 1em
 </style>
