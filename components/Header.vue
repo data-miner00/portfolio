@@ -92,7 +92,7 @@ export default Vue.extend({
       padding: 15px 0
 
       &.active
-        color: pink
+        color: brown
 
     &__made-by
       font-size: 0.5em
@@ -129,6 +129,7 @@ export default Vue.extend({
       background: none
       justify-content: space-between
       transform: translate(0)
+      transition: none
       &__logo
         display: none
       &__made-by
