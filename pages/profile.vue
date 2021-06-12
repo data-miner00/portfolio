@@ -212,7 +212,7 @@ export default Vue.extend({
         width: 30%
         height: 3px
         margin: 30px auto
-        background: gray
+        background: brown
   &__about
     &__para
       // font-size: .85em
@@ -246,6 +246,7 @@ export default Vue.extend({
           background: brown
           color: white
         &.btn--secondary
+          // box-sizing: content-box
           margin-left: 10px
           background: #e6dace
           border: 2px solid black
@@ -280,7 +281,7 @@ export default Vue.extend({
     &__education
       display: flex
       .wrap
-        margin-right: 80px
+        margin-right: 20%
         width: fit-content
       &__content
 
@@ -293,6 +294,30 @@ export default Vue.extend({
         background-repeat: no-repeat
         background-position: center
 
+    &__technical
+      &__skills
+        grid-template-columns: repeat(5, 18%)
+
+    &__check-out
+      &__label
+        text-align: center
+      &__actions
+        width: fit-content
+        margin: 20px auto 0
+
+@media screen and (min-width: 1240px)
+  .profile
+    .name-card-wrap
+      padding: 0 38%
+
+    &__education
+      &__illus-img
+        width: 400px
+        height: 300px
+
+    &__technical
+      &__skills
+        width: 80%
 //   section
 //     margin-bottom: 50px
 
