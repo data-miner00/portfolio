@@ -1,9 +1,10 @@
 export const state = () => ({
-  page: 'h',
+  selectedPage: 'h',
 })
 
 export const mutations = {
-  setPage(state: any, page: string) {
-    state.page = page
+  setPage(state: any, selectedPage: string) {
+    console.log(selectedPage)
+    state.selectedPage = selectedPage
   },
 }
