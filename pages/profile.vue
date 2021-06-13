@@ -1,75 +1,79 @@
 <template>
   <div class="profile">
-    <div class="profile__left-section">
-      <div class="profile__left-section__avatar">
-        <img src="~/assets/images/podium.jpg" alt="my avatar" />
+    <div class="wrap">
+      <div class="profile__left-section">
+        <div class="profile__left-section__avatar">
+          <img src="~/assets/images/podium.jpg" alt="my avatar" />
+        </div>
+      </div>
+
+      <div class="profile__right-section">
+        <div class="profile__right-section__hello">
+          <h1>Pleasure to meet you</h1>
+        </div>
+        <div class="profile__right-section__content">
+          <p>
+            I'm Mum Khong(Shaun), a <span>software engineer</span> rookie that
+            has just graduated recently. I believe that a good process is the
+            part and parcel of a good software.
+          </p>
+          <p>
+            A little bit of my demographics, I'm 23 years old and will be
+            turning 24 in the upcoming year. I come from Melaka, a pristine
+            state filled with joy in Malaysia.
+          </p>
+          <p>
+            I have <span>never, ever</span> in my life been exposed to
+            programming and coding related stuffs until I have opted for a
+            Software Engineering Degree course in my university, which is
+            Universiti Tunku Abdul Rahman, located at the suburbs of Selangor. I
+            was 20 years old back then, which is relatively
+            <span>"old"</span> to join the tech world in my opinion.
+          </p>
+          <p>
+            During my first year of my university life, I am
+            <span>not doing well</span> in the academics as I am not accustomed
+            for university lifestyle and the programming course are just pure
+            alienating to me. Fortunately, my uni life took a
+            <span>critical turn</span> during my second year of studies wher I
+            have met many friends that are knowledgeable in all kinds of topic.
+            My academic performance showed signs of improvement as I have gotten
+            my first A grade at that time.
+          </p>
+          <p>
+            Sooner or later, I realised that programming is actually pretty
+            <span>exciting</span> and <span>exhilirating</span>. Every facet of
+            programming that was intimidating me at first are now making sense
+            to me gradually. Topics such as data structures, machine learning,
+            functional programming etc. are indeed tough at first glance, but
+            after started working with them, I am feeling more and more
+            <span>comfortable</span> about them.
+          </p>
+          <p>
+            I am an <span>inquisitive</span> person. Whenever I stumble upon
+            something that I am not fond of, for things like technology, math,
+            science, languages... basically evetyhing, I will be googling them
+            until i get the rough idea of what it is, I will dive deeper if I
+            found the topics intriguing.
+          </p>
+          <p>
+            During my free time, I will constantly
+            <span>give myself a project</span> to work with, using the
+            programming skills that I have amassed to solve a problem that I am
+            facing and consolidating my programming skills with different
+            technologies.
+          </p>
+          <p>
+            Technology asides, I indulge in reading article and short stories as
+            a way to broaden up my horizon and improve my English writing
+            skills. Moreover, I learn and study about <span>Japanese</span> and
+            <span>Korean</span> language once in a while as I am a big fan of
+            these beautiful languages.
+          </p>
+        </div>
       </div>
     </div>
 
-    <div class="profile__right-section">
-      <div class="profile__right-section__hello">
-        <h1>Pleasure to meet you</h1>
-      </div>
-      <div class="profile__right-section__content">
-        <p>
-          I'm Mum Khong(Shaun), a <span>software engineer</span> rookie that has
-          just graduated recently. I believe that a good process is the part and
-          parcel of a good software.
-        </p>
-        <p>
-          A little bit of my demographics, I'm 23 years old and will be turning
-          24 in the upcoming year. I come from Melaka, a pristine state filled
-          with joy in Malaysia.
-        </p>
-        <p>
-          I have <span>never, ever</span> in my life been exposed to programming
-          and coding related stuffs until I have opted for a Software
-          Engineering Degree course in my university, which is Universiti Tunku
-          Abdul Rahman, located at the suburbs of Selangor. I was 20 years old
-          back then, which is relatively <span>"old"</span> to join the tech
-          world in my opinion.
-        </p>
-        <p>
-          During my first year of my university life, I am
-          <span>not doing well</span> in the academics as I am not accustomed
-          for university lifestyle and the programming course are just pure
-          alienating to me. Fortunately, my uni life took a
-          <span>critical turn</span> during my second year of studies wher I
-          have met many friends that are knowledgeable in all kinds of topic. My
-          academic performance showed signs of improvement as I have gotten my
-          first A grade at that time.
-        </p>
-        <p>
-          Sooner or later, I realised that programming is actually pretty
-          <span>exciting</span> and <span>exhilirating</span>. Every facet of
-          programming that was intimidating me at first are now making sense to
-          me gradually. Topics such as data structures, machine learning,
-          functional programming etc. are indeed tough at first glance, but
-          after started working with them, I am feeling more and more
-          <span>comfortable</span> about them.
-        </p>
-        <p>
-          I am an <span>inquisitive</span> person. Whenever I stumble upon
-          something that I am not fond of, for things like technology, math,
-          science, languages... basically evetyhing, I will be googling them
-          until i get the rough idea of what it is, I will dive deeper if I
-          found the topics intriguing.
-        </p>
-        <p>
-          During my free time, I will constantly
-          <span>give myself a project</span> to work with, using the programming
-          skills that I have amassed to solve a problem that I am facing and
-          consolidating my programming skills with different technologies.
-        </p>
-        <p>
-          Technology asides, I indulge in reading article and short stories as a
-          way to broaden up my horizon and improve my English writing skills.
-          Moreover, I learn and study about <span>Japanese</span> and
-          <span>Korean</span> language once in a while as I am a big fan of
-          these beautiful languages.
-        </p>
-      </div>
-    </div>
     <div class="profile__socials">
       <div class="profile__socials__social">
         <fa :icon="faFacebook" />
@@ -186,11 +190,12 @@ export default Vue.extend({
 
 <style lang="sass" scoped>
 .profile
-  display: flex
-  flex-direction: column
   padding: 50px 0
+  .wrap
+    display: flex
+    flex-direction: column
+
   &__left-section
-    background: black
     padding: 0 1%
 
     &__avatar
@@ -222,6 +227,38 @@ export default Vue.extend({
     justify-content: space-between
     width: 170px
     margin: 0 auto
+
+@media screen and (min-width: 620px)
+  .profile
+    .wrap
+      flex-direction: row
+    &__left-section
+      padding-top: 50px
+      padding-left: 5%
+      &__avatar
+        width: 200px
+        height: 200px
+
+@media screen and (min-width: 960px)
+  .profile
+
+    &__left-section
+
+      &__avatar
+        width: 260px
+        height: 260px
+
+    &__socials
+      &__social
+        transition: color .4s
+        &:hover
+          color: brown
+
+@media screen and (min-width: 1024px)
+  .profile
+    .wrap
+      width: 1024px
+      margin: 0 auto
 
 // .profile
 //   background: purple
