@@ -11,14 +11,14 @@
       <div class="wrapper">
         <div class="home__links">
           <div class="home__links__link active">hello</div>
-          <nuxt-link to="/"
+          <nuxt-link to="/profile" @click.native="setActive('a')"
             ><div class="home__links__link">view my profile</div></nuxt-link
           >
-          <nuxt-link to="/"
-            ><div class="home__links__link">things i do</div></nuxt-link
+          <nuxt-link to="/education" @click.native="setActive('e')"
+            ><div class="home__links__link">schools i go</div></nuxt-link
           >
-          <nuxt-link to="/"
-            ><div class="home__links__link">get in touch</div></nuxt-link
+          <nuxt-link to="/projects" @click.native="setActive('p')"
+            ><div class="home__links__link">things i do</div></nuxt-link
           >
           <nuxt-link to="/"
             ><div class="home__links__link">testimonial</div></nuxt-link
@@ -75,6 +75,11 @@ export default Vue.extend({
     },
     faTwitter() {
       return faTwitter
+    },
+  },
+  methods: {
+    setActive(pageName: string): void {
+      this.$store.commit('app/setPage', pageName)
     },
   },
 })
