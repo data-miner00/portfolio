@@ -8,23 +8,23 @@
     .header__nav-links(ref="sidebar")
       .header__nav-links__logo(@click="closeNav")
         img.header__nav-links__logo__img(src="~/assets/images/ck.svg")
-      NuxtLink(to="/" @click.native="setActive('home')")
-        .header__nav-links__link(:class="{'active': isActive('home')}") Home
-      NuxtLink(to="/profile" @click.native="setActive('profile')")
-        .header__nav-links__link(:class="{'active': isActive('profile')}") Profile
-      NuxtLink(to="/projects" @click.native="setActive('projects')")
-        .header__nav-links__link(:class="{'active': isActive('projects')}") Projects
-      NuxtLink(to="/contact" @click.native="setActive('contact')")
-        .header__nav-links__link(:class="{'active': isActive('contact')}") Contact
-      .header__nav-links__made-by made with ❤ by terrence #[br] &copy; 2021
+      NuxtLink(to="/" @click.native="setActive('h')")
+        .header__nav-links__link(:class="{'active': isActive('h')}") Home
+      NuxtLink(to="/profile" @click.native="setActive('a')")
+        .header__nav-links__link(:class="{'active': isActive('a')}") About
+      NuxtLink(to="/education" @click.native="setActive('e')")
+        .header__nav-links__link(:class="{'active': isActive('e')}") Education
+      NuxtLink(to="/projects" @click.native="setActive('p')")
+        .header__nav-links__link(:class="{'active': isActive('p')}") Projects
+      .header__nav-links__made-by made with ❤ by shaun #[br] &copy; 2021
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+
 export default Vue.extend({
-  //
   data: () => ({
-    selectedPage: 'home',
+    selectedPage: 'h',
   }),
   methods: {
     setActive(pageName: string): void {
