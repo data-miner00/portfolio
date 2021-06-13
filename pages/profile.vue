@@ -1,87 +1,87 @@
 <template>
   <div class="profile">
-    <div class="name-card-wrap">
-      <div class="profile__name-card">
-        <div class="label">About Me</div>
-        <div class="profile__name-card__card">
-          <div class="profile__name-card__card__avatar">
-            <img src="~/assets/images/my-cute-photo.jpg" alt="my avatar" />
-          </div>
-          <div class="profile__name-card__card__name">
-            Chong Mum Khong<br />(Shaun)
-          </div>
-          <div class="divider"></div>
-          <div class="profile__name-card__card__pos">Software Engineer</div>
-        </div>
+    <div class="profile__left-section">
+      <div class="profile__left-section__avatar">
+        <img src="~/assets/images/podium.jpg" alt="my avatar" />
       </div>
     </div>
-    <section class="profile__about">
-      <div class="title">
-        <h1>About Me</h1>
-      </div>
-      <div class="profile__about__para content">
-        <p>
-          Hello. I'm Mum Khong. I am a Software Engineering Freshgrade from
-          Universiti Tunku Abdul Rahman (UTAR). I am 23 years old and I came
-          from Melaka. Nice to meet you!
-        </p>
-      </div>
-    </section>
-    <section class="profile__education">
-      <div class="wrap">
-        <div class="title">
-          <h1>Education</h1>
-        </div>
 
-        <div class="profile__education__content content">
-          <EduCard
-            v-for="(education, index) in educations"
-            :key="index"
-            :color="education.color"
-            :level="education.level"
-            :field="education.field"
-            :school="education.school"
-            :result="education.result"
-            :year="education.year"
-          />
-        </div>
+    <div class="profile__right-section">
+      <div class="profile__right-section__hello">
+        <h1>Pleasure to meet you</h1>
       </div>
-      <div class="profile__education__illus-img"></div>
-    </section>
-    <section class="profile__technical">
-      <div class="title">
-        <h1>Tech Skills</h1>
-      </div>
-      <div class="subtitle">The technologies that I use often.</div>
-      <div class="profile__technical__skills content">
-        <TechCard
-          v-for="(tech, index) in techs"
-          :key="index"
-          :name="tech.name"
-          :logoFile="tech.logoFile"
-        />
-      </div>
-    </section>
-    <section class="profile__goals">
-      <div class="title">
-        <h1>My Goals</h1>
-      </div>
-      <div class="profile__goals__goals content">
+      <div class="profile__right-section__content">
         <p>
-          Being grateful to the amazing technologies built by wonderful
-          developers out there, I would like to contribute to open-source
-          projects when I am capable of as a way of repaying to the community.
-          It is a social responsibility.
+          I'm Mum Khong(Shaun), a <span>software engineer</span> rookie that has
+          just graduated recently. I believe that a good process is the part and
+          parcel of a good software.
+        </p>
+        <p>
+          A little bit of my demographics, I'm 23 years old and will be turning
+          24 in the upcoming year. I come from Melaka, a pristine state filled
+          with joy in Malaysia.
+        </p>
+        <p>
+          I have <span>never, ever</span> in my life been exposed to programming
+          and coding related stuffs until I have opted for a Software
+          Engineering Degree course in my university, which is Universiti Tunku
+          Abdul Rahman, located at the suburbs of Selangor. I was 20 years old
+          back then, which is relatively <span>"old"</span> to join the tech
+          world in my opinion.
+        </p>
+        <p>
+          During my first year of my university life, I am
+          <span>not doing well</span> in the academics as I am not accustomed
+          for university lifestyle and the programming course are just pure
+          alienating to me. Fortunately, my uni life took a
+          <span>critical turn</span> during my second year of studies wher I
+          have met many friends that are knowledgeable in all kinds of topic. My
+          academic performance showed signs of improvement as I have gotten my
+          first A grade at that time.
+        </p>
+        <p>
+          Sooner or later, I realised that programming is actually pretty
+          <span>exciting</span> and <span>exhilirating</span>. Every facet of
+          programming that was intimidating me at first are now making sense to
+          me gradually. Topics such as data structures, machine learning,
+          functional programming etc. are indeed tough at first glance, but
+          after started working with them, I am feeling more and more
+          <span>comfortable</span> about them.
+        </p>
+        <p>
+          I am an <span>inquisitive</span> person. Whenever I stumble upon
+          something that I am not fond of, for things like technology, math,
+          science, languages... basically evetyhing, I will be googling them
+          until i get the rough idea of what it is, I will dive deeper if I
+          found the topics intriguing.
+        </p>
+        <p>
+          During my free time, I will constantly
+          <span>give myself a project</span> to work with, using the programming
+          skills that I have amassed to solve a problem that I am facing and
+          consolidating my programming skills with different technologies.
+        </p>
+        <p>
+          Technology asides, I indulge in reading article and short stories as a
+          way to broaden up my horizon and improve my English writing skills.
+          Moreover, I learn and study about <span>Japanese</span> and
+          <span>Korean</span> language once in a while as I am a big fan of
+          these beautiful languages.
         </p>
       </div>
-    </section>
-    <div class="profile__check-out">
-      <div class="profile__check-out__label">Checkout More of My Details!</div>
-      <div class="profile__check-out__actions">
-        <div class="profile__check-out__actions__btn btn--primary">Resume</div>
-        <div class="profile__check-out__actions__btn btn--secondary">
-          Projects
-        </div>
+    </div>
+    <div class="profile__socials">
+      <div class="profile__socials__social">
+        <fa :icon="faFacebook" />
+      </div>
+      <div class="profile__socials__social">
+        <fa :icon="faGithub" />
+      </div>
+      <div class="profile__socials__social">
+        <fa :icon="faLinkedin" />
+      </div>
+      <div class="profile__socials__social">
+        <fa :icon="faTwitter" />
       </div>
     </div>
   </div>
@@ -89,13 +89,33 @@
 
 <script lang="ts">
 import Vue from 'vue'
+
+import {
+  faFacebook,
+  faGithub,
+  faLinkedin,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons'
+
 export default Vue.extend({
   layout: 'detailPage',
   head: () => ({
-    title: 'Profile | Terrence',
+    title: 'Profile',
     meta: [],
   }),
   computed: {
+    faFacebook() {
+      return faFacebook
+    },
+    faGithub() {
+      return faGithub
+    },
+    faLinkedin() {
+      return faLinkedin
+    },
+    faTwitter() {
+      return faTwitter
+    },
     educations() {
       return [
         {
@@ -165,239 +185,57 @@ export default Vue.extend({
 </script>
 
 <style lang="sass" scoped>
-//
 .profile
-  padding: 20px 0 0
+  display: flex
+  flex-direction: column
+  padding: 50px 0
+  &__left-section
+    background: black
+    padding: 0 1%
 
-  section
-    margin-bottom: 40px
-    padding-left: calc(20px + 5%)
-    padding-right: 5%
+    &__avatar
+      width: 250px
+      height: 250px
+      overflow: hidden
+      border-radius: 50%
+      margin: 0 auto
+      img
+        width: 350px
+        object-fit: contain
+  &__right-section
+    padding: 50px 5%
+    &__hello
+      margin-bottom: 25px
+      h1
+        font-size: 1.25em
 
-  .content
-    margin-top: 20px
+    &__content
+      p
+        margin: 20px 0 25px
+        span
+          font-weight: bold
+          color: brown
 
-  .subtitle
-    color: gray
-    font-size: 0.6em
+  &__socials
+    display: flex
+    font-size: 1.65em
+    justify-content: space-between
+    width: 170px
+    margin: 0 auto
 
-  .name-card-wrap
-    padding: 0 5%
-  &__name-card
-    padding: 40px
-    text-align: center
-    background: #f4ece6
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2)
-    border-radius: 5px
-    margin-bottom: 40px
-    .label
-      font-style: italic
-      font-size: 0.8em
-    &__card
-      margin-top: 20px
-      &__avatar
-        border-radius: 50%
-        height: 70px
-        width: 70px
-        margin: 0 auto
-        overflow: hidden
-        img
-          width: 70px
-
-      &__name
-        margin-top: 20px
-        font-weight: 700
-
-      .divider
-        width: 30%
-        height: 3px
-        margin: 30px auto
-        background: brown
-  &__about
-    &__para
-      // font-size: .85em
-      line-height: 1.625
-
-  &__technical
-    padding-right: calc(20px + 5%)
-    &__skills
-      display: grid
-      grid-template-columns: 50% 50%
-      row-gap: 20px
-  &__goals
-    &__goals
-      line-height: 1.625
-
-  &__check-out
-    background: #e6dace
-    padding: 50px
-    margin-bottom: 0
-    &__label
-      font-size: 1.5em
-      color: white
-
-    &__actions
-      display: flex
-      margin-top: 10px
-      &__btn
-        border-radius: 250px
-        padding: 6px 20px
-        &.btn--primary
-          background: brown
-          color: white
-        &.btn--secondary
-          // box-sizing: content-box
-          margin-left: 10px
-          background: #e6dace
-          border: 2px solid black
-
-@media screen and (min-width: 420px)
-  .profile
-    &__technical
-      &__skills
-        grid-template-columns: 33% 33% 33%
-
-@media screen and (min-width: 620px)
-  .profile
-    .name-card-wrap
-      padding: 0 30%
-
-    section
-      padding: 0 20%
-      margin-bottom: 80px
-
-    p
-      text-indent: 40px
-
-    &__check-out
-      padding: 60px 20%
-
-@media screen and (min-width: 960px)
-  .profile
-    .name-card-wrap
-      padding: 0 36%
-
-    // Adding an illustration image for education section
-    &__education
-      display: flex
-      .wrap
-        margin-right: 20%
-        width: fit-content
-      &__content
-
-        width: fit-content
-      &__illus-img
-        height: 250px
-        width: 300px
-        background-image: url(~assets/images/podium.jpg)
-        background-size: cover
-        background-repeat: no-repeat
-        background-position: center
-
-    &__technical
-      &__skills
-        grid-template-columns: repeat(5, 18%)
-
-    &__check-out
-      &__label
-        text-align: center
-      &__actions
-        width: fit-content
-        margin: 20px auto 0
-
-@media screen and (min-width: 1240px)
-  .profile
-    .name-card-wrap
-      padding: 0 38%
-
-    &__education
-      &__illus-img
-        width: 400px
-        height: 300px
-
-    &__technical
-      &__skills
-        width: 80%
-//   section
-//     margin-bottom: 50px
-
-//   &__label
-//     text-align: center
-//     font-size: 0.75em
-//     color: gray
-//   &__intro
-
-//     &__hi
-//       font-size: 3em
-//       font-weight: 700
-
-//     &__name
-//       span
-//         color: #BAA5FF
-//         font-weight: 600
-
-//     &__im
-//       margin-top: 50px
-//       font-size: 2.5em
-//       font-weight: 600
-//       text-align: right
-//     &__from
-//       text-align: right
-//       font-size: 0.8em
-//       span
-//         color: #0FA3B1
-
-//     &__ih
-//       margin-top: 50px
-//       font-size: 2.5em
-//       font-weight: 700
-//     &__studied
-//       font-size: .7em
+// .profile
+//   background: purple
+//   padding: 0 20%
+//   display: grid
+//   grid-template-columns: 35% 65%
+//   &__left-section
+//     background: black
+//     &__avatar
+//       width: 225px
+//       height: 225px
+//       overflow: hidden
+//       border-radius: 50%
 //       img
-//         width: 40px
-
-//       span
-
-        // font-weight: 500
-        // font-style: italic
-
-
-    // &__avatar-sec
-    //   margin-top: 100px
-    //   background: #B2967D
-    //   min-height: 200px
-    //   padding: 40px 20px
-    //   border-radius: 10px
-
-
-    //   &__label
-    //     color: #eee
-    //     text-align: center
-
-    //   &__avatar
-    //     width: 100px
-    //     height: 100px
-    //     border-radius: 50%
-    //     margin: 0 auto
-    //     overflow: hidden
-    //     img
-    //       width: 100px
-
-
-
-    // .label
-    //   color: #0fa3b1
-    //   font-weight: 800
-
-    // &__content
-
-
-    // &__avatar
-    //   width: fit-content
-    //   // border-radius: 250px
-    //   overflow: hidden
-    //   margin: 0 auto
-
-    //   &__img
-    //     width: 100px
+//         width: 300px
+//         object-fit: cover
 </style>
