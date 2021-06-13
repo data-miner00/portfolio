@@ -57,6 +57,7 @@ export default Vue.extend({
   top: 0
   left: 0
   width: 100vw
+  z-index: 999
 
   &__dummy
     height: 17px
