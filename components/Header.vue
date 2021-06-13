@@ -23,12 +23,9 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  data: () => ({
-    selectedPage: 'h',
-  }),
   methods: {
     setActive(pageName: string): void {
-      this.selectedPage = pageName
+      this.$store.commit('app/setPage', pageName)
     },
     isActive(pageName: string): boolean {
       return this.selectedPage == pageName
@@ -38,6 +35,11 @@ export default Vue.extend({
     },
     closeNav(): void {
       ;(this.$refs['sidebar'] as HTMLElement).classList.remove('pulled-in')
+    },
+  },
+  computed: {
+    selectedPage() {
+      return this.$store.state.app.selectedPage
     },
   },
 })
