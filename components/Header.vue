@@ -9,13 +9,13 @@
       .header__nav-links__logo(@click="closeNav")
         img.header__nav-links__logo__img(src="~/assets/images/ck.svg")
       NuxtLink(to="/" @click.native="setActive('home')")
-        .header__nav-links__link(:class="{'active': isActive('home')}") home
+        .header__nav-links__link(:class="{'active': isActive('home')}") Home
       NuxtLink(to="/profile" @click.native="setActive('profile')")
-        .header__nav-links__link(:class="{'active': isActive('profile')}") profile
+        .header__nav-links__link(:class="{'active': isActive('profile')}") Profile
       NuxtLink(to="/projects" @click.native="setActive('projects')")
-        .header__nav-links__link(:class="{'active': isActive('projects')}") projects
+        .header__nav-links__link(:class="{'active': isActive('projects')}") Projects
       NuxtLink(to="/contact" @click.native="setActive('contact')")
-        .header__nav-links__link(:class="{'active': isActive('contact')}") contact
+        .header__nav-links__link(:class="{'active': isActive('contact')}") Contact
       .header__nav-links__made-by made with ❤ by terrence #[br] &copy; 2021
 </template>
 
@@ -46,7 +46,6 @@ export default Vue.extend({
 <style lang="sass" scoped>
 .header
   height: 100px
-  border-bottom: 1px solid #eee
   display: flex
   padding: 0 5%
   justify-content: space-between
@@ -90,6 +89,7 @@ export default Vue.extend({
 
     &__link
       padding: 15px 0
+      font-weight: bold
 
       &.active
         color: brown
@@ -112,7 +112,7 @@ export default Vue.extend({
 @media screen and (min-width: 960px)
   .header
     width: 100%
-    padding: 0 20%
+    // padding: 0 20%
     &__dummy
       display: none
 
