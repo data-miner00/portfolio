@@ -1,7 +1,7 @@
 <template lang="pug">
   header.header
     .header__dummy
-    .header__logo
+    a.header__logo(href="#")
       img.header__logo__img(src="~/assets/images/ck.svg")
     .header__burger(@click="openNav")
       img.header__burger__img(src="~/assets/images/berger.svg")
@@ -63,6 +63,7 @@ export default Vue.extend({
     height: 17px
     width: 27px
   &__logo
+    display: block
     &__img
       width: 55px
 
