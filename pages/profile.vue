@@ -36,17 +36,17 @@
             for university lifestyle and the programming course are just pure
             alienating to me. Fortunately, my uni life took a
             <span>critical turn</span> during my second year of studies wher I
-            have met many friends that are knowledgeable in all kinds of topic.
-            My academic performance showed signs of improvement as I have gotten
-            my first A grade at that time.
+            have met a number of fabulous friends that are knowledgeable in all
+            kinds of topic. My academic performance showed signs of improvement
+            as I have gotten my first A grade at that time.
           </p>
           <p>
             Sooner or later, I realised that programming is actually pretty
             <span>exciting</span> and <span>exhilirating</span>. Every facet of
             programming that was intimidating me at first are now making sense
             to me gradually. Topics such as data structures, machine learning,
-            functional programming etc. are indeed tough at first glance, but
-            after started working with them, I am feeling more and more
+            functional programming, Git etc. are indeed tough at first glance,
+            but after started working with them, I am feeling more and more
             <span>comfortable</span> about them.
           </p>
           <p>
@@ -74,32 +74,12 @@
       </div>
     </div>
 
-    <div class="profile__socials">
-      <div class="profile__socials__social">
-        <fa :icon="faFacebook" />
-      </div>
-      <div class="profile__socials__social">
-        <fa :icon="faGithub" />
-      </div>
-      <div class="profile__socials__social">
-        <fa :icon="faLinkedin" />
-      </div>
-      <div class="profile__socials__social">
-        <fa :icon="faTwitter" />
-      </div>
-    </div>
+    <Socials />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-
-import {
-  faFacebook,
-  faGithub,
-  faLinkedin,
-  faTwitter,
-} from '@fortawesome/free-brands-svg-icons'
 
 export default Vue.extend({
   layout: 'detailPage',
@@ -108,18 +88,6 @@ export default Vue.extend({
     meta: [],
   }),
   computed: {
-    faFacebook() {
-      return faFacebook
-    },
-    faGithub() {
-      return faGithub
-    },
-    faLinkedin() {
-      return faLinkedin
-    },
-    faTwitter() {
-      return faTwitter
-    },
     educations() {
       return [
         {
@@ -206,7 +174,7 @@ export default Vue.extend({
       margin: 0 auto
       img
         width: 350px
-        object-fit: contain
+        object-fit: cover
   &__right-section
     padding: 50px 5%
     &__hello
@@ -220,13 +188,6 @@ export default Vue.extend({
         span
           font-weight: bold
           color: brown
-
-  &__socials
-    display: flex
-    font-size: 1.65em
-    justify-content: space-between
-    width: 170px
-    margin: 0 auto
 
 @media screen and (min-width: 620px)
   .profile
@@ -247,12 +208,6 @@ export default Vue.extend({
       &__avatar
         width: 260px
         height: 260px
-
-    &__socials
-      &__social
-        transition: color .4s
-        &:hover
-          color: brown
 
 @media screen and (min-width: 1024px)
   .profile

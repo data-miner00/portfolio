@@ -29,6 +29,7 @@
         imgSrc="tmu.jpg"
       ></School>
     </div>
+    <Socials />
   </div>
 </template>
 
