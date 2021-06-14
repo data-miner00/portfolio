@@ -1,5 +1,5 @@
 <template lang="pug">
-  header.header
+  header.header(ref="header")
     .header__dummy
     a.header__logo(href="#")
       img.header__logo__img(src="~/assets/images/ck.svg")
@@ -23,6 +23,15 @@
 import Vue from 'vue'
 
 export default Vue.extend({
+  mounted(): void {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        ;(this.$refs.header as HTMLElement).classList.add('scrolled')
+      } else {
+        ;(this.$refs.header as HTMLElement).classList.remove('scrolled')
+      }
+    })
+  },
   methods: {
     setActive(pageName: string): void {
       this.$store.commit('app/setPage', pageName)
@@ -58,7 +67,8 @@ export default Vue.extend({
   left: 0
   width: 100vw
   z-index: 999
-
+  &.scrolled
+    box-shadow: 0px 1px 2px #eee
   &__dummy
     height: 17px
     width: 27px
