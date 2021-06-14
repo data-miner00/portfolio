@@ -1,9 +1,7 @@
 <template>
   <div class="projects">
     <div class="wrap">
-      <div class="projects__label">
-        <h1>My projects</h1>
-      </div>
+      <PageHeading title="Projects" />
       <Project
         name="E-learning Platform"
         type="Full-stack Web Application"
@@ -195,10 +193,4 @@ export default Vue.extend({
 <style lang="sass" scoped>
 .projects
   padding: 50px 0
-  &__label
-    text-align: center
-    h1
-      font-style: italic
-      font-size: 1.25em
-      font-weight: normal
 </style>
