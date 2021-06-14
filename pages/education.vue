@@ -48,7 +48,25 @@
         result="CGPA 3.33"
         imgSrc="munshi.jpg"
       >
-        <p></p>
+        <p>
+          SMK Munshi Abdullah is one of the secondary school that have Form 6 in
+          Melaka. I had been offered for joining the Physics class which is
+          insanely difficult and I gladly accepted the offer because I wanted to
+          give myself a challenge.
+        </p>
+        <p>
+          All of the Form 6 students are obligated to register for the MUET
+          certification and we are blessed to have a dedicated class taught by
+          experienced lecturers. Hence, it is actually not that bad after all as
+          it saves the hassle to participate MUET in my university. My MUET
+          score is Band 4, not terrible but not excellent either.
+        </p>
+        <p>
+          My favourite class is Chemistry especially Organic Chemistry as I am
+          obsessed with the Benzene ring very much. The class I despise is the
+          Pengajian Am class. There is way too much formula and rules to
+          memorize to answer the question and I just couldn't take it.
+        </p>
       </School>
       <School
         name="SMK Tun Mutahir"
@@ -58,7 +76,12 @@
         result="7A 1B 2C"
         imgSrc="tmu.jpg"
       >
-        <p>SMK Tun Mutahir, established back in 1968, is a secondary school</p>
+        <p>
+          SMK Tun Mutahir, established back in 1968, is a secondary school
+          located just beside SMK Munshi Abdullah, how convenient. I've spent
+          most of my honeymoon year here with my buddies just having fun playing
+          around the school.
+        </p>
       </School>
     </div>
     <Socials />
