@@ -46,7 +46,8 @@ export default Vue.extend({
 
 <style lang="sass" scoped>
 .project
-  padding: 50px 0 25px
+  padding: 0 0 75px
+
   &__title
     padding: 0 5%
   &__subtitle
