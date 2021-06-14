@@ -47,15 +47,6 @@ export default Vue.extend({
 <style lang="sass" scoped>
 .project
   padding: 50px 0 25px
-  // position: relative
-  // &::before
-  //   content: ''
-  //   position: absolute
-  //   left: 40%
-  //   right: 40%
-  //   bottom: -4px
-  //   height: 1px
-  //   background: brown
   &__title
     padding: 0 5%
   &__subtitle
