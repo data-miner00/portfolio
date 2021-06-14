@@ -52,7 +52,7 @@
               <fa :icon="faTwitter" />
             </a>
           </div>
-          <div class="home__footer__craft">crafted by mum khong</div>
+          <div class="home__footer__craft">crafted by shaun</div>
         </div>
       </div>
     </div>
@@ -71,8 +71,7 @@ import {
 
 export default Vue.extend({
   head: () => ({
-    title: "Mum Khong's Personal Portfolio",
-    meta: [],
+    title: 'Welcome to my Portfolio',
   }),
   computed: {
     faFacebookF() {

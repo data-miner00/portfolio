@@ -84,8 +84,7 @@ import Vue from 'vue'
 export default Vue.extend({
   layout: 'detailPage',
   head: () => ({
-    title: 'Profile',
-    meta: [],
+    title: 'About Me',
   }),
   computed: {
     educations() {
