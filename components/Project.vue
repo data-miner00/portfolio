@@ -19,7 +19,7 @@
               | cupiditate ipsum similique commodi!
         .project__wrap__content__tech
           .title
-            h3 Tech Stacks
+            h3 Technology
           .wrap
             .item(
               v-for="(tech, index) in stacks"
@@ -83,11 +83,15 @@ export default Vue.extend({
           margin: 0 auto
           justify-content: center
           .item
-            // padding: 12px
+            flex-grow: 1
+            flex-shrink: 1
             height: 88px
             width: 105px
             // background: purple
             // border: 1px solid #eee
+            display: flex
+            flex-direction: column
+            justify-content: center
             text-align: center
             &__img
               figure
