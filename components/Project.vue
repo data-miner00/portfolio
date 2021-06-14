@@ -46,7 +46,16 @@ export default Vue.extend({
 
 <style lang="sass" scoped>
 .project
-  padding: 20px 0 25px
+  padding: 50px 0 25px
+  // position: relative
+  // &::before
+  //   content: ''
+  //   position: absolute
+  //   left: 40%
+  //   right: 40%
+  //   bottom: -4px
+  //   height: 1px
+  //   background: brown
   &__title
     padding: 0 5%
   &__subtitle
@@ -102,4 +111,15 @@ export default Vue.extend({
             &__name
               padding: 5px 0
               font-size: 14px
+
+@media screen and (min-width: 620px)
+  .project
+    &__wrap
+      display: grid
+      grid-template-columns: 2fr 3fr
+
+@media screen and (min-width: 1024px)
+  .project
+    width: 1025px
+    margin: 0 auto
 </style>
