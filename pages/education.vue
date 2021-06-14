@@ -14,7 +14,7 @@
       ></School>
       <School
         name="SMK Munshi Abdullah"
-        year="2016-207"
+        year="2016-2017"
         scholar="STPM"
         field="Major in Physics"
         result="CGPA 3.33"
@@ -26,7 +26,7 @@
         scholar="SPM"
         field="Science"
         result="7A 1B 2C"
-        imgSrc="munshi.jpg"
+        imgSrc="tmu.jpg"
       ></School>
     </div>
   </div>
