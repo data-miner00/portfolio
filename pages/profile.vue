@@ -3,7 +3,7 @@
     <div class="wrap">
       <div class="profile__left-section">
         <div class="profile__left-section__avatar">
-          <img src="~/assets/images/podium.jpg" alt="my avatar" />
+          <img src="~/assets/images/my-cute-photo.jpg" alt="my avatar" />
         </div>
       </div>
 
