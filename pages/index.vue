@@ -11,37 +11,48 @@
       <div class="wrapper">
         <div class="home__links">
           <div class="home__links__link active">hello</div>
-          <nuxt-link to="/"
-            ><div class="home__links__link">view my profile</div></nuxt-link
+          <nuxt-link to="/profile" @click.native="setActive('a')"
+            ><div class="home__links__link">about me</div></nuxt-link
           >
-          <nuxt-link to="/"
+          <nuxt-link to="/education" @click.native="setActive('e')"
+            ><div class="home__links__link">schools i go</div></nuxt-link
+          >
+          <nuxt-link to="/projects" @click.native="setActive('p')"
             ><div class="home__links__link">things i do</div></nuxt-link
-          >
-          <nuxt-link to="/"
-            ><div class="home__links__link">get in touch</div></nuxt-link
-          >
-          <nuxt-link to="/"
-            ><div class="home__links__link">testimonial</div></nuxt-link
           >
         </div>
         <div class="home__footer">
           <div class="home__footer__socials">
-            <div class="home__footer__socials__social">
+            <a
+              class="home__footer__socials__social"
+              href="https://www.facebook.com/sysdate"
+              target="_blank"
+            >
               <fa :icon="faFacebookF" />
-            </div>
-            <div class="home__footer__socials__social">
+            </a>
+            <a
+              class="home__footer__socials__social"
+              href="https://www.linkedin.com/in/chong-mum-khong-343b3b1b0/"
+              target="_blank"
+            >
               <fa :icon="faLinkedinIn" />
-            </div>
-            <div class="home__footer__socials__social">
+            </a>
+            <a
+              class="home__footer__socials__social"
+              href="https://github.com/data-miner00"
+              target="_blank"
+            >
               <fa :icon="faGithubAlt" />
-            </div>
-            <div class="home__footer__socials__social">
+            </a>
+            <a
+              class="home__footer__socials__social"
+              href="https://twitter.com/Has66771004"
+              target="_blank"
+            >
               <fa :icon="faTwitter" />
-            </div>
+            </a>
           </div>
-          <div class="home__footer__craft">
-            crafted with <span>love</span> by terrence.
-          </div>
+          <div class="home__footer__craft">crafted by shaun</div>
         </div>
       </div>
     </div>
@@ -60,8 +71,7 @@ import {
 
 export default Vue.extend({
   head: () => ({
-    title: "Mum Khong's Personal Portfolio",
-    meta: [],
+    title: 'Welcome to my Portfolio',
   }),
   computed: {
     faFacebookF() {
@@ -75,6 +85,11 @@ export default Vue.extend({
     },
     faTwitter() {
       return faTwitter
+    },
+  },
+  methods: {
+    setActive(pageName: string): void {
+      this.$store.commit('app/setPage', pageName)
     },
   },
 })
@@ -119,6 +134,11 @@ export default Vue.extend({
       justify-content: space-between
       width: 200px
       margin-bottom: 20px
+      &__social
+        display: block
+        transition: color .4s
+        &:hover
+          color: brown
 
     &__craft
       font-size: 0.75em
