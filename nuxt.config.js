@@ -36,6 +36,8 @@ export default {
     '@nuxtjs/fontawesome',
   ],
 
+  buildDir: 'dist',
+
   // Fontawesome
   fontawesome: {
     component: 'fa',
