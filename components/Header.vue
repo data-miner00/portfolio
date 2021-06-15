@@ -16,7 +16,7 @@
         .header__nav-links__link(:class="{'active': isActive('e')}") Education
       NuxtLink(to="/projects" @click.native="setActive('p')")
         .header__nav-links__link(:class="{'active': isActive('p')}") Projects
-      .header__nav-links__made-by made with ❤ by shaun #[br] &copy; 2021
+      .header__nav-links__made-by crafted by Shaun #[br] &copy; 2021
 </template>
 
 <script lang="ts">
@@ -26,9 +26,14 @@ export default Vue.extend({
   mounted(): void {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 50) {
-        ;(this.$refs.header as HTMLElement).classList.add('scrolled')
+        // If statement to silence the undefined behaviour
+        if (this.$refs.header) {
+          ;(this.$refs.header as HTMLElement).classList.add('scrolled')
+        }
       } else {
-        ;(this.$refs.header as HTMLElement).classList.remove('scrolled')
+        if (this.$refs.header) {
+          ;(this.$refs.header as HTMLElement).classList.remove('scrolled')
+        }
       }
     })
   },
