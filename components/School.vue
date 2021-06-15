@@ -49,7 +49,6 @@ export default Vue.extend({
   padding-bottom: 50px
   &__img
     padding: 0 5%
-    background: #eee
     div
       width: 100%
       height: 140px
