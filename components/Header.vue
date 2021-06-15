@@ -10,11 +10,11 @@
         img.header__nav-links__logo__img(src="~/assets/images/ck.svg")
       NuxtLink(to="/" @click.native="setActive('h')")
         .header__nav-links__link(:class="{'active': isActive('h')}") Home
-      NuxtLink(to="/profile" @click.native="setActive('a')")
+      NuxtLink(to="/profile" @click.native="setActive('a'); closeNav()")
         .header__nav-links__link(:class="{'active': isActive('a')}") About
-      NuxtLink(to="/education" @click.native="setActive('e')")
+      NuxtLink(to="/education" @click.native="setActive('e'); closeNav()")
         .header__nav-links__link(:class="{'active': isActive('e')}") Education
-      NuxtLink(to="/projects" @click.native="setActive('p')")
+      NuxtLink(to="/projects" @click.native="setActive('p'); closeNav()")
         .header__nav-links__link(:class="{'active': isActive('p')}") Projects
       .header__nav-links__made-by crafted by Shaun #[br] &copy; 2021
 </template>
