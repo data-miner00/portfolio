@@ -6,7 +6,7 @@
         name="E-learning Platform"
         type="Full-stack Web Application"
         :year="2021"
-        imgSrc="temp.jpg"
+        imgSrc="p1.png"
         :stacks="stacks[0]"
       >
         <p>
@@ -40,7 +40,7 @@
         name="Ignite de Spark"
         type="Webpage"
         :year="2019"
-        imgSrc="temp.jpg"
+        imgSrc="p2.png"
         :stacks="stacks[1]"
       >
         <p>
@@ -60,7 +60,7 @@
         name="Personal Blog"
         type="Webpage"
         :year="2021"
-        imgSrc="temp.jpg"
+        imgSrc="p3.png"
         :stacks="stacks[2]"
       >
         <p>
@@ -75,7 +75,7 @@
         name="Personal Portfolio"
         type="Webpage"
         :year="2021"
-        imgSrc="temp.jpg"
+        imgSrc="p4.png"
         :stacks="stacks[3]"
       >
         <p>
