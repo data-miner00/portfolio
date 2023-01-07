@@ -1,34 +1,34 @@
 <template lang="pug">
-  .project
-    .project__title 
-      h2 {{ name }}
-    .project__subtitle
-      h4 {{ type }} ({{ year }})
+.project
+  .project__title 
+    h2 {{ name }}
+  .project__subtitle
+    h4 {{ type }} ({{ year }})
 
-    .project__wrap
-      .project__wrap__img
-        div
-          img(:src="require(`../assets/images/${imgSrc}`)")
-      .project__wrap__content
-        .project__wrap__content__details
-          slot
-            p
-              | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eveniet
-              | quod nostrum dolore ipsam blanditiis repellendus cum maiores facilis,
-              | laudantium accusantium quasi perferendis. Facilis minima eligendi
-              | cupiditate ipsum similique commodi!
-        .project__wrap__content__tech
-          .title
-            h3 Technology
-          .wrap
-            .item(
-              v-for="(tech, index) in stacks"
-              :key="index"
-            )
-              .item__img
-                figure
-                  img(:src="`/logos/${tech.imgSrc}`")
-              .item__name {{ tech.name }}
+  .project__wrap
+    .project__wrap__img
+      div
+        img(:src="require(`../assets/images/${imgSrc}`)")
+    .project__wrap__content
+      .project__wrap__content__details
+        slot
+          p
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eveniet
+            | quod nostrum dolore ipsam blanditiis repellendus cum maiores facilis,
+            | laudantium accusantium quasi perferendis. Facilis minima eligendi
+            | cupiditate ipsum similique commodi!
+      .project__wrap__content__tech
+        .title
+          h3 Technology
+        .wrap
+          .item(
+            v-for="(tech, index) in stacks"
+            :key="index"
+          )
+            .item__img
+              figure
+                img(:src="`/logos/${tech.imgSrc}`")
+            .item__name {{ tech.name }}
 </template>
 
 <script lang="ts">
@@ -88,8 +88,6 @@ export default Vue.extend({
             flex-shrink: 1
             height: 88px
             width: 105px
-            // background: purple
-            // border: 1px solid #eee
             display: flex
             flex-direction: column
             justify-content: center

@@ -7,7 +7,17 @@
         type="Full-stack Web Application"
         :year="2021"
         imgSrc="p1.png"
-        :stacks="stacks[0]"
+        :stacks="
+          stackDetailsMapper([
+            'vue',
+            'vuetify',
+            'sass',
+            'firebase',
+            'socket',
+            'typescript',
+            'node',
+          ])
+        "
       >
         <p>
           E-learning Platform for Distanced Collaborative Coding Assignments is
@@ -41,7 +51,7 @@
         type="Webpage"
         :year="2019"
         imgSrc="p2.png"
-        :stacks="stacks[1]"
+        :stacks="stackDetailsMapper(['html', 'css', 'javascript'])"
       >
         <p>
           Ignite de Spark is the <span>last event</span> that committees of my
@@ -61,7 +71,17 @@
         type="Webpage"
         :year="2021"
         imgSrc="p3.png"
-        :stacks="stacks[2]"
+        :stacks="
+          stackDetailsMapper([
+            'next',
+            'react',
+            'sass',
+            'contentful',
+            'typescript',
+            'tailwind',
+            'framer',
+          ])
+        "
       >
         <p>
           I have started out building the first blogging website that I can
@@ -76,7 +96,7 @@
         type="Webpage"
         :year="2021"
         imgSrc="p4.png"
-        :stacks="stacks[3]"
+        :stacks="stackDetailsMapper(['nuxt', 'vue', 'sass', 'typescript'])"
       >
         <p>
           This project is to build my <span>portfolio website</span>, which is
@@ -95,96 +115,23 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import stackDetails from '../data/stackDetails.json'
+
+type StackDetails = {
+  [handle: string]: {
+    name: string
+    imgSrc: string
+  }
+}
 
 export default Vue.extend({
   head: () => ({
     title: 'Projects',
   }),
   layout: 'detailPage',
-  computed: {
-    stacks() {
-      return [
-        [
-          {
-            name: 'Vue.js',
-            imgSrc: 'vue.png',
-          },
-          {
-            name: 'Vuetify',
-            imgSrc: 'vuetify.png',
-          },
-          {
-            name: 'Sass',
-            imgSrc: 'sass.png',
-          },
-          {
-            name: 'Firebase',
-            imgSrc: 'firebase.png',
-          },
-          {
-            name: 'Socket.io',
-            imgSrc: 'socket.png',
-          },
-          {
-            name: 'TypeScript',
-            imgSrc: 'typescript.png',
-          },
-          {
-            name: 'Node.js',
-            imgSrc: 'node.png',
-          },
-        ],
-        [
-          {
-            name: 'HTML',
-            imgSrc: 'html.png',
-          },
-          {
-            name: 'CSS',
-            imgSrc: 'css.png',
-          },
-          {
-            name: 'JavaScript',
-            imgSrc: 'javascript.png',
-          },
-        ],
-        [
-          {
-            name: 'Next.js',
-            imgSrc: 'next.png',
-          },
-          {
-            name: 'React.js',
-            imgSrc: 'react.webp',
-          },
-          {
-            name: 'Sass',
-            imgSrc: 'sass.png',
-          },
-          {
-            name: 'Contentful',
-            imgSrc: 'contentful.png',
-          },
-        ],
-        [
-          {
-            name: 'Nuxt.js',
-            imgSrc: 'nuxt.svg',
-          },
-          {
-            name: 'Vue.js',
-            imgSrc: 'vue.png',
-          },
-          {
-            name: 'Sass',
-            imgSrc: 'sass.png',
-          },
-          {
-            name: 'TypeScript',
-            imgSrc: 'typescript.png',
-          },
-        ],
-      ]
+  methods: {
+    stackDetailsMapper(stacks: Array<any>) {
+      return stacks.map((stack) => (stackDetails as StackDetails)[stack])
     },
   },
 })

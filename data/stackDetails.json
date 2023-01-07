@@ -1,0 +1,70 @@
+{
+  "vue": {
+    "name": "Vue.js",
+    "imgSrc": "vue.png"
+  },
+  "vuetify": {
+    "name": "Vuetify",
+    "imgSrc": "vuetify.png"
+  },
+  "sass": {
+    "name": "Sass",
+    "imgSrc": "sass.png"
+  },
+  "firebase": {
+    "name": "Firebase",
+    "imgSrc": "firebase.png"
+  },
+  "socket": {
+    "name": "Socket.io",
+    "imgSrc": "socket.png"
+  },
+  "typescript": {
+    "name": "TypeScript",
+    "imgSrc": "typescript.png"
+  },
+  "node": {
+    "name": "Node.js",
+    "imgSrc": "node.png"
+  },
+  "html": {
+    "name": "HTML",
+    "imgSrc": "html.png"
+  },
+  "css": {
+    "name": "CSS",
+    "imgSrc": "css.png"
+  },
+  "less": {
+    "name": "LESS",
+    "imgSrc": "less.png"
+  },
+  "javascript": {
+    "name": "JavaScript",
+    "imgSrc": "javascript.png"
+  },
+  "next": {
+    "name": "Next.js",
+    "imgSrc": "next.png"
+  },
+  "react": {
+    "name": "React.js",
+    "imgSrc": "react.webp"
+  },
+  "contentful": {
+    "name": "Contentful",
+    "imgSrc": "contentful.png"
+  },
+  "nuxt": {
+    "name": "Nuxt.js",
+    "imgSrc": "nuxt.svg"
+  },
+  "framer": {
+    "name": "Framer Motion",
+    "imgSrc": "motion.webp"
+  },
+  "tailwind": {
+    "name": "Tailwind CSS",
+    "imgSrc": "tailwind.png"
+  }
+}
