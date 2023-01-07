@@ -37,7 +37,7 @@ export default Vue.extend({
   props: {
     name: String,
     type: String,
-    year: Number,
+    year: String,
     imgSrc: String,
     stacks: Array,
   },

@@ -5,7 +5,7 @@
       <Project
         name="E-learning Platform"
         type="Full-stack Web Application"
-        :year="2021"
+        year="2021"
         imgSrc="p1.png"
         :stacks="
           stackDetailsMapper([
@@ -49,7 +49,7 @@
       <Project
         name="Ignite de Spark"
         type="Webpage"
-        :year="2019"
+        year="2019"
         imgSrc="p2.png"
         :stacks="stackDetailsMapper(['html', 'css', 'javascript'])"
       >
@@ -69,7 +69,7 @@
       <Project
         name="Personal Blog"
         type="Webpage"
-        :year="2021"
+        year="2021-2022"
         imgSrc="p3.png"
         :stacks="
           stackDetailsMapper([
@@ -94,7 +94,7 @@
       <Project
         name="Personal Portfolio"
         type="Webpage"
-        :year="2021"
+        year="2021"
         imgSrc="p4.png"
         :stacks="stackDetailsMapper(['nuxt', 'vue', 'sass', 'typescript'])"
       >
