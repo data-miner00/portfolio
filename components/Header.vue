@@ -1,22 +1,22 @@
 <template lang="pug">
-  header.header(ref="header")
-    .header__dummy
-    a.header__logo(href="#")
-      img.header__logo__img(src="~/assets/images/ck.svg")
-    .header__burger(@click="openNav")
-      img.header__burger__img(src="~/assets/images/berger.svg")
-    .header__nav-links(ref="sidebar")
-      .header__nav-links__logo(@click="closeNav")
-        img.header__nav-links__logo__img(src="~/assets/images/ck.svg")
-      NuxtLink(to="/" @click.native="setActive('h')")
-        .header__nav-links__link(:class="{'active': isActive('h')}") Home
-      NuxtLink(to="/profile" @click.native="setActive('a'); closeNav()")
-        .header__nav-links__link(:class="{'active': isActive('a')}") About
-      NuxtLink(to="/education" @click.native="setActive('e'); closeNav()")
-        .header__nav-links__link(:class="{'active': isActive('e')}") Education
-      NuxtLink(to="/projects" @click.native="setActive('p'); closeNav()")
-        .header__nav-links__link(:class="{'active': isActive('p')}") Projects
-      .header__nav-links__made-by crafted by Shaun #[br] &copy; 2021
+header.header(ref="header")
+  .header__dummy
+  NuxtLink.header__logo(to="/" @click.native="setActive('h')")
+    img.header__logo__img(src="~/assets/images/ck.svg")
+  .header__burger(@click="openNav")
+    img.header__burger__img(src="~/assets/images/berger.svg")
+  .header__nav-links(ref="sidebar")
+    .header__nav-links__logo(@click="closeNav")
+      img.header__nav-links__logo__img(src="~/assets/images/ck.svg")
+    NuxtLink(to="/" @click.native="setActive('h')")
+      .header__nav-links__link(:class="{'active': isActive('h')}") Home
+    NuxtLink(to="/profile" @click.native="setActive('a'); closeNav()")
+      .header__nav-links__link(:class="{'active': isActive('a')}") About
+    NuxtLink(to="/education" @click.native="setActive('e'); closeNav()")
+      .header__nav-links__link(:class="{'active': isActive('e')}") Education
+    NuxtLink(to="/projects" @click.native="setActive('p'); closeNav()")
+      .header__nav-links__link(:class="{'active': isActive('p')}") Projects
+    .header__nav-links__made-by crafted by Shaun #[br] &copy; 2021
 </template>
 
 <script lang="ts">
