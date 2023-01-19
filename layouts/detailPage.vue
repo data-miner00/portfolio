@@ -1,7 +1,7 @@
 <template lang="pug">
-  .detailPage
-    Header/
-    Nuxt/
+.detailPage
+  Header/
+  Nuxt/
 </template>
 
 <script lang="ts">
