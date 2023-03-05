@@ -6,9 +6,14 @@
     h4 {{ type }} ({{ year }})
 
   .project__wrap
-    .project__wrap__img
-      div
+    .project__wrap__left
+      .project__wrap__left__img
         img(:src="require(`../assets/images/${imgSrc}`)")
+      .project__wrap__left__links
+        p Links
+        div
+          a(:href="`https://www.github.com/data-miner00/${gitHubRepo}`" target="_blank" rel="noreferrer noopener") View Repository #[span ↝]
+          a(:href="websiteUrl" target="_blank" rel="noreferrer noopener") View Website #[span ↝]
     .project__wrap__content
       .project__wrap__content__details
         slot
@@ -40,6 +45,14 @@ export default Vue.extend({
     year: String,
     imgSrc: String,
     stacks: Array,
+    gitHubRepo: {
+      type: String,
+      default: 'data-miner00',
+    },
+    websiteUrl: {
+      type: String,
+      default: 'https://www.google.com',
+    },
   },
 })
 </script>
@@ -57,9 +70,9 @@ export default Vue.extend({
       color: gray
   &__wrap
     padding-top: 10px
-    &__img
+    &__left
       padding: 0 5%
-      div
+      &__img
         width: 100%
         height: 140px
         padding-top: 66.67%
@@ -69,6 +82,34 @@ export default Vue.extend({
           position: absolute
           top: 0
           width: 100%
+      &__links
+        p
+          font-weight: 600
+          margin-bottom: 10px
+        div
+          display: flex
+          flex-wrap: wrap
+          a
+            font-size: 14px
+            display: block
+            position: relative
+            margin-right: 10px
+            color: #888
+            &::after
+              content: ''
+              position: absolute
+              left: 0
+              bottom: -4px
+              height: 2px
+              width: 0
+              background: #888
+              border-radius: 3px
+              transition: width .2s ease
+            &:hover
+              color: #0F1419
+              &::after
+                width: 100%
+                background: #0F1419
     &__content
       padding: 0 5%
       &__details
@@ -107,6 +148,8 @@ export default Vue.extend({
     &__wrap
       display: grid
       grid-template-columns: 2fr 3fr
+      &__left__links
+        padding-left: 30px
 
 @media screen and (min-width: 1024px)
   .project
