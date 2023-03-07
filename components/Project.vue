@@ -16,6 +16,7 @@
           a(v-if="websiteUrl" :href="websiteUrl" target="_blank" rel="noreferrer noopener") View Website #[span ↝]
     .project__wrap__content
       .project__wrap__content__details
+        span.project__wrap__content__details__generated(v-if="generatedFrom") ⤿ Generated from #[a(:href="`#${generatedFromId}`") {{ generatedFrom }}]
         slot
           p
             | Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eveniet
@@ -40,6 +41,7 @@
 import Vue from 'vue'
 export default Vue.extend({
   props: {
+    id: String,
     name: String,
     type: String,
     year: String,
@@ -50,6 +52,8 @@ export default Vue.extend({
       default: 'data-miner00',
     },
     websiteUrl: String,
+    generatedFrom: String,
+    generatedFromId: String,
   },
 })
 </script>
@@ -110,6 +114,12 @@ export default Vue.extend({
     &__content
       padding: 0 5%
       &__details
+        &__generated
+          font-size: 12px
+          color: #666
+          a
+            font-weight: 600
+            color: #333
         p
           margin: 20px 0 25px
       &__tech
