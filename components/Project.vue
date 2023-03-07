@@ -13,7 +13,7 @@
         p Links
         div
           a(:href="`https://www.github.com/data-miner00/${gitHubRepo}`" target="_blank" rel="noreferrer noopener") View Repository #[span ↝]
-          a(:href="websiteUrl" target="_blank" rel="noreferrer noopener") View Website #[span ↝]
+          a(v-if="websiteUrl" :href="websiteUrl" target="_blank" rel="noreferrer noopener") View Website #[span ↝]
     .project__wrap__content
       .project__wrap__content__details
         slot
@@ -49,10 +49,7 @@ export default Vue.extend({
       type: String,
       default: 'data-miner00',
     },
-    websiteUrl: {
-      type: String,
-      default: 'https://www.google.com',
-    },
+    websiteUrl: String,
   },
 })
 </script>
