@@ -72,8 +72,9 @@ export default Vue.extend({
   left: 0
   width: 100vw
   z-index: 999
+  border-bottom: 1px solid transparent
   &.scrolled
-    box-shadow: 0px 1px 2px #eee
+    border-bottom-color: #eee
   &__dummy
     height: 17px
     width: 27px
