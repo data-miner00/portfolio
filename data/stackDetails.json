@@ -66,5 +66,73 @@
   "tailwind": {
     "name": "Tailwind CSS",
     "imgSrc": "tailwind.png"
+  },
+  "angular": {
+    "name": "Angular",
+    "imgSrc": "angular.png"
+  },
+  "bulma": {
+    "name": "Bulma",
+    "imgSrc": "bulma.png"
+  },
+  "echarts": {
+    "name": "ECharts",
+    "imgSrc": "echarts.png"
+  },
+  "jest": {
+    "name": "Jest",
+    "imgSrc": "jest.png"
+  },
+  "storybook": {
+    "name": "Storybook",
+    "imgSrc": "storybook.png"
+  },
+  "truffle": {
+    "name": "Truffle",
+    "imgSrc": "truffle.png"
+  },
+  "ganache": {
+    "name": "Ganache",
+    "imgSrc": "ganache.png"
+  },
+  "solidity": {
+    "name": "Solidity",
+    "imgSrc": "solidity.png"
+  },
+  "pinata": {
+    "name": "Pinata",
+    "imgSrc": "pinata.svg"
+  },
+  "jasmine": {
+    "name": "Jasmine",
+    "imgSrc": "jasmine.png"
+  },
+  "circleci": {
+    "name": "Circle CI",
+    "imgSrc": "circleci.png"
+  },
+  "zod": {
+    "name": "Zod",
+    "imgSrc": "zod.png"
+  },
+  "esbuild": {
+    "name": "esbuild",
+    "imgSrc": "esbuild.png"
+  },
+  "workflow": {
+    "name": "Workflow",
+    "imgSrc": "github.png"
+  },
+  "rescript": {
+    "name": "Rescript",
+    "imgSrc": "rescript.svg"
+  },
+  "csharp": {
+    "name": "C#",
+    "imgSrc": "csharp.png"
+  },
+  "fsharp": {
+    "name": "F#",
+    "imgSrc": "fsharp.png"
   }
 }
