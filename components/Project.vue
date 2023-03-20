@@ -122,6 +122,13 @@ export default Vue.extend({
             color: #333
         p
           margin: 20px 0 25px
+          a
+            text-decoration: underline
+          code
+            background: #eee
+            padding: 1px 7px
+            border-radius: 4px
+            color: #333
       &__tech
         .title
           margin-bottom: 20px
