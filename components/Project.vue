@@ -45,7 +45,10 @@ export default Vue.extend({
     name: String,
     type: String,
     year: String,
-    imgSrc: String,
+    imgSrc: {
+      type: String,
+      default: 'p.png',
+    },
     stacks: Array,
     gitHubRepo: {
       type: String,
