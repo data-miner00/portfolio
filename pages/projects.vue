@@ -375,19 +375,6 @@
         </p>
       </Project>
       <Project
-        name="Linker"
-        type="CLI"
-        year="2022-2023"
-        :stacks="stackDetailsMapper(['csharp'])"
-        gitHubRepo="Linker"
-      >
-        <p>
-          A project that store links. URL such as regular website, articles and
-          Youtube channels are supported. Currently implemented CLI, soon will
-          develop APIs and ASP.NET UI with Blazor.
-        </p>
-      </Project>
-      <Project
         name="Nuxt Content Template"
         type="Web Docs Template"
         year="2023"
@@ -399,7 +386,7 @@
         <p>
           Yet another template project but with the purpose of creating
           aesthetically pleasing documentation sites. It comes with dark mode,
-          markdown (in MDX) to HTML converter and also supports LaTeX for
+          markdown (in MDC) to HTML converter and also supports LaTeX for
           writing profound mathematical equations.
         </p>
         <p>This template is using Vue v3 with Composition API and Nuxt v3.</p>
@@ -435,25 +422,14 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import stackDetails from '../data/stackDetails.json'
-
-type StackDetails = {
-  [handle: string]: {
-    name: string
-    imgSrc: string
-  }
-}
+import { stackDetailsMapper } from '~/data/utils'
 
 export default Vue.extend({
   head: () => ({
     title: 'Projects',
   }),
   layout: 'detailPage',
-  methods: {
-    stackDetailsMapper(stacks: Array<any>) {
-      return stacks.map((stack) => (stackDetails as StackDetails)[stack])
-    },
-  },
+  methods: { stackDetailsMapper },
 })
 </script>
 
