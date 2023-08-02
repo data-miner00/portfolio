@@ -3,7 +3,7 @@
     <div class="wrap">
       <div class="profile__left-section">
         <div class="profile__left-section__avatar">
-          <img src="~/assets/images/my-cute-photo.jpg" alt="my avatar" />
+          <img src="~/assets/images/avatar.jpg" alt="my avatar" />
         </div>
       </div>
 
@@ -13,14 +13,16 @@
         </div>
         <div class="profile__right-section__content">
           <p>
-            I'm Mum Khong(Shaun), a <span>software engineer</span> rookie that
-            has just graduated recently. I believe that a good process is the
-            part and parcel of a good software.
+            I'm Shaun, a mid-level <span>software engineer</span> currently
+            working at
+            <a href="https://www.experian.com.my/">Experian Malaysia</a> as a
+            backend engineer. I believe that a good process is the part and
+            parcel of a good software.
           </p>
           <p>
-            A little bit of my demographics, I'm 23 years old and will be
-            turning 24 in the upcoming year. I come from Melaka, a pristine
-            state filled with joy in Malaysia.
+            A little bit of my demographics, I'm {{ age }} years old and will be
+            turning {{ age + 1 }} in the upcoming year. I come from Melaka, a
+            pristine state filled with joy in Malaysia.
           </p>
           <p>
             I have <span>never, ever</span> in my life been exposed to
@@ -42,19 +44,19 @@
           </p>
           <p>
             Sooner or later, I realised that programming is actually pretty
-            <span>exciting</span> and <span>exhilirating</span>. Every facet of
+            <span>exciting</span> and <span>enjoyable</span>. Every facet of
             programming that was intimidating me at first are now making sense
             to me gradually. Topics such as data structures, machine learning,
-            functional programming, Git etc. are indeed tough at first glance,
-            but after started working with them, I am feeling more and more
-            <span>comfortable</span> about them.
+            functional programming, Git etc. are extremely tough for a rookie.
+            Thankfully, after started working with them, I am feeling more and
+            more <span>comfortable</span> about them.
           </p>
           <p>
             I am an <span>inquisitive</span> person. Whenever I stumble upon
             something that I am not fond of, for things like technology, math,
             science, languages... basically evetyhing, I will be googling them
-            until i get the rough idea of what it is, I will dive deeper if I
-            found the topics intriguing.
+            until i get the rough idea of what it is (well, not always though),
+            I will dive deeper if I found the topics intriguing.
           </p>
           <p>
             During my free time, I will constantly
@@ -67,8 +69,9 @@
             Technology asides, I indulge in reading article and short stories as
             a way to broaden up my horizon and improve my English writing
             skills. Moreover, I learn and study about <span>Japanese</span> and
-            <span>Korean</span> language once in a while as I am a big fan of
-            these beautiful languages.
+            <span>Korean</span> language on and off but I am planning to
+            participate in a dedicated class soon to master them once and for
+            all.
           </p>
         </div>
       </div>
@@ -87,69 +90,14 @@ export default Vue.extend({
     title: 'About Me',
   }),
   computed: {
-    educations() {
-      return [
-        {
-          color: '#84e35d',
-          level: 'Degree',
-          field: 'Software Engineering',
-          school: 'Universiti Tunku Abdul Rahman',
-          result: 'CGPA 3.31',
-          year: '2018-2021',
-        },
-        {
-          // color: 'blue',
-          level: 'STPM',
-          field: 'Physics',
-          school: 'SMK Munshi Abdullah',
-          result: 'CGPA 3.33',
-          year: '2016-2017',
-        },
-        {
-          // color: 'crimson',
-          level: 'SPM',
-          field: 'Science',
-          school: 'SMK Tun Mutahir',
-          result: '7A 1B 2C',
-          year: '2011-2015',
-        },
-      ]
-    },
-    techs() {
-      return [
-        {
-          name: 'Vue.js',
-          logoFile: 'vue.png',
-        },
-        {
-          name: 'React.js',
-          logoFile: 'react.webp',
-        },
-        {
-          name: 'Node.js',
-          logoFile: 'node.png',
-        },
-        {
-          name: 'CSS',
-          logoFile: 'css.png',
-        },
-        {
-          name: 'Python',
-          logoFile: 'python.png',
-        },
-        {
-          name: 'Java',
-          logoFile: 'java.png',
-        },
-        {
-          name: 'C#',
-          logoFile: 'csharp.png',
-        },
-        {
-          name: 'TypeScript',
-          logoFile: 'typescript.png',
-        },
-      ]
+    age() {
+      const today = new Date()
+      const bday = new Date('1998-03-04')
+
+      const diff = today.getTime() - bday.getTime()
+      const YEAR = 60 * 60 * 24 * 365 * 1000
+
+      return ~~(diff / YEAR)
     },
   },
 })
@@ -172,7 +120,7 @@ export default Vue.extend({
       border-radius: 50%
       margin: 0 auto
       img
-        width: 350px
+        width: 280px
         object-fit: cover
   &__right-section
     padding: 50px 5%
@@ -187,6 +135,9 @@ export default Vue.extend({
         span
           font-weight: bold
           color: brown
+        a
+          text-decoration: underline
+          font-weight: bold
 
 @media screen and (min-width: 620px)
   .profile
@@ -213,20 +164,4 @@ export default Vue.extend({
     .wrap
       width: 1024px
       margin: 0 auto
-
-// .profile
-//   background: purple
-//   padding: 0 20%
-//   display: grid
-//   grid-template-columns: 35% 65%
-//   &__left-section
-//     background: black
-//     &__avatar
-//       width: 225px
-//       height: 225px
-//       overflow: hidden
-//       border-radius: 50%
-//       img
-//         width: 300px
-//         object-fit: cover
 </style>
