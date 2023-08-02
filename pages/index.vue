@@ -20,6 +20,9 @@
           <nuxt-link to="/projects" @click.native="setActive('p')"
             ><div class="home__links__link">things i do</div></nuxt-link
           >
+          <nuxt-link to="/career" @click.native="setActive('c')">
+            <div class="home__links__link">working</div>
+          </nuxt-link>
         </div>
         <div class="home__footer">
           <div class="home__footer__socials">

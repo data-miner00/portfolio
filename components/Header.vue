@@ -16,6 +16,8 @@ header.header(ref="header")
       .header__nav-links__link(:class="{'active': isActive('e')}") Education
     NuxtLink(to="/projects" @click.native="setActive('p'); closeNav()")
       .header__nav-links__link(:class="{'active': isActive('p')}") Projects
+    NuxtLink(to="/career" @click.native="setActive('c'); closeNav()")
+      .header__nav-links__link(:class="{'active': isActive('c')}") Career
     .header__nav-links__made-by crafted by Shaun #[br] &copy; 2021
 </template>
 
@@ -143,7 +145,7 @@ export default Vue.extend({
       border-left: none
       position: static
       height: fit-content
-      width: 350px
+      width: 430px
       flex-direction: row
       padding: 0
       background: none

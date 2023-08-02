@@ -134,5 +134,25 @@
   "fsharp": {
     "name": "F#",
     "imgSrc": "fsharp.png"
+  },
+  "azure": {
+    "name": "Azure",
+    "imgSrc": "azure.png"
+  },
+  "dotnet": {
+    "name": ".NET",
+    "imgSrc": "dotnet.png"
+  },
+  "python": {
+    "name": "Python",
+    "imgSrc": "python.png"
+  },
+  "databricks": {
+    "name": "Databricks",
+    "imgSrc": "databricks.png"
+  },
+  "figma": {
+    "name": "Figma",
+    "imgSrc": "figma.webp"
   }
 }
