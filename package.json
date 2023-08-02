@@ -1,7 +1,8 @@
 {
   "name": "personal-portfolio",
+  "description": "My personal website/portfolio",
   "version": "1.0.0",
-  "private": true,
+  "author": "Shaun Chong <mumkhong@skiff.com>",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt generate",
