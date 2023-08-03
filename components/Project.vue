@@ -1,7 +1,7 @@
 <template lang="pug">
 .project
   .project__title 
-    h2 {{ name }}
+    h2(:id="id") {{ name }}
   .project__subtitle
     h4 {{ type }} ({{ year }})
 

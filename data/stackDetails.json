@@ -154,5 +154,13 @@
   "figma": {
     "name": "Figma",
     "imgSrc": "figma.webp"
+  },
+  "elm": {
+    "name": "Elm",
+    "imgSrc": "elm.png"
+  },
+  "vite": {
+    "name": "Vite",
+    "imgSrc": "vite.png"
   }
 }
