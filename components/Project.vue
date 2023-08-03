@@ -12,7 +12,7 @@
       .project__wrap__left__links
         p Links
         div
-          a(:href="`https://www.github.com/data-miner00/${gitHubRepo}`" target="_blank" rel="noreferrer noopener") View Repository #[span ↝]
+          a(v-if="gitHubRepo" :href="`https://www.github.com/data-miner00/${gitHubRepo}`" target="_blank" rel="noreferrer noopener") View Repository #[span ↝]
           a(v-if="websiteUrl" :href="websiteUrl" target="_blank" rel="noreferrer noopener") View Website #[span ↝]
     .project__wrap__content
       .project__wrap__content__details
@@ -50,10 +50,7 @@ export default Vue.extend({
       default: 'p.png',
     },
     stacks: Array,
-    gitHubRepo: {
-      type: String,
-      default: 'data-miner00',
-    },
+    gitHubRepo: String,
     websiteUrl: String,
     generatedFrom: String,
     generatedFromId: String,
