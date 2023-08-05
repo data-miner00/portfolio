@@ -1,13 +1,13 @@
 <template lang="pug">
-  .socials
-    a.socials__social(href="https://www.facebook.com/sysdate" target="_blank")
-      fa(:icon="faFacebook")
-    a.socials__social(href="https://www.linkedin.com/in/chong-mum-khong-343b3b1b0/" target="_blank")
-      fa(:icon="faGithub")
-    a.socials__social(href="https://github.com/data-miner00" target="_blank")
-      fa(:icon="faLinkedin")
-    a.socials__social(href="https://twitter.com/Has66771004" target="_blank")
-      fa(:icon="faTwitter")
+.socials
+  a.socials__social(href="https://www.facebook.com/sysdate" target="_blank")
+    fa(:icon="faFacebook")
+  a.socials__social(href="https://github.com/data-miner00" target="_blank")
+    fa(:icon="faGithub")
+  a.socials__social(href="https://www.linkedin.com/in/chong-mum-khong-343b3b1b0/" target="_blank")
+    fa(:icon="faLinkedin")
+  a.socials__social(href="https://twitter.com/Has66771004" target="_blank")
+    fa(:icon="faTwitter")
 </template>
 
 <script lang="ts">

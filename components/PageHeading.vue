@@ -1,7 +1,7 @@
 <template lang="pug">
-  .heading
-    .heading__actual(:data-content="title")
-      h1 {{ title }}
+.heading
+  .heading__actual(:data-content="title")
+    h1 {{ title }}
 </template>
 
 <script lang="ts">
@@ -18,8 +18,6 @@ export default Vue.extend({
   height: 150px
   display: grid
   place-items: center
-
-
   &__actual
     position: relative
     z-index: 0

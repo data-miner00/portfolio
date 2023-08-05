@@ -1,7 +1,7 @@
 <template lang="pug">
-  .detailPage
-    Header/
-    Nuxt/
+.detailPage
+  Header/
+  Nuxt/
 </template>
 
 <script lang="ts">
@@ -12,8 +12,6 @@ export default Vue.extend({
 </script>
 
 <style lang="sass" scoped>
-@import "../assets/sass/global"
-
 .detailPage
   position: relative
   overflow-x: hidden
