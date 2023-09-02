@@ -331,6 +331,7 @@
         imgSrc="elm-vite-tailwind.png"
         :stacks="stackDetailsMapper(['elm', 'vite', 'javascript', 'tailwind'])"
         gitHubRepo="elm-vite-template"
+        websiteUrl="https://elm-vite-template.vercel.app/"
       >
         <p>
           A <span>starter</span> template for building <span>robust</span> web

@@ -3,6 +3,7 @@
   "description": "My personal website/portfolio",
   "version": "1.0.0",
   "author": "Shaun Chong <mumkhong@skiff.com>",
+  "license": "ISC",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt generate",
