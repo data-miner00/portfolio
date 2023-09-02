@@ -3,6 +3,7 @@
   "description": "My personal website/portfolio",
   "version": "1.0.0",
   "author": "Shaun Chong <mumkhong@skiff.com>",
+  "license": "ISC",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt generate",
@@ -12,12 +13,12 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.17.1"
   },
   "devDependencies": {
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@nuxt/types": "^2.15.3",
+    "@nuxt/types": "^2.17.1",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/fontawesome": "^1.1.2",
     "eslint-config-prettier": "^8.1.0",
@@ -26,10 +27,7 @@
     "prettier": "^2.2.1",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
-    "sass": "^1.34.1",
-    "sass-loader": "10"
-  },
-  "engines": {
-    "node": "^14.19.0"
+    "sass": "^1.66.1",
+    "sass-loader": "10.4.1"
   }
 }

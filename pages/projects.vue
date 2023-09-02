@@ -42,16 +42,16 @@
         websiteUrl="https://blog-mumk.vercel.app/"
       >
         <p>
-          I have started out building the first blogging website to record down
-          fun experience in my life as memories can be fleeting. Asides, it also
+          I started out building my own blogging website to record down fun
+          experience in my life as memories are fleeting. Furthermore, it also
           aimed at brodening my horizon into intriguing topics that are
           <span>unrelated</span> to technology while continuously improving and
           <span>consolidating</span> my writing skills in various languages. It
           takes a lot of effort (~7 days) to plan, outline, write, enhance and
-          proofreading to ensure quality of the blog post. As a result, I post
+          proofreading to ensure quality of a blog post. As a result, I post
           relatively slowly as I did not have the time solely dedicated for
-          writing. However, I hope that this will change as my language
-          competency improves.
+          writing. However, I hope that the time to deliver will change as my
+          language competency improves.
         </p>
       </Project>
       <Project
@@ -66,20 +66,19 @@
         websiteUrl="https://book-dun-three.vercel.app/"
       >
         <p>
-          Book is a project that I use to <span>document things</span> that I
-          learned in the form of tutorials, notes and cheatsheets. As I am
-          obsessed with learning new stuffs, I am mindful that there are just
-          too much things to learn and it is impossible to keep everything in
-          memory.
+          Book is a project that I use to
+          <span>document technical topics</span> that I learned in the form of
+          tutorials, notes and cheatsheets. As I am obsessed with learning new
+          stuffs, I am mindful that there are just too much things to learn and
+          it is impossible to keep everything in memory all the time.
         </p>
         <p>
-          Hence, I wanted a place for me to document them down. This also helps
-          me to have a <span>better picture</span> to the topic that I am trying
-          to pick up as it forces me to dive deeper to disambiguate my
-          superficial understanding. Besides, the documents can also serves as a
-          <span>refresher</span> for me in the future when I wanted to apply
-          them somewhere. Also, by putting it online, I hope that this will
-          <span>benefit others</span> as well.
+          Hence, I wanted a place to store and manage the info that I've came
+          across so that I can <span>refer</span> them back in the future when
+          needed. This also helps me to have a <span>better picture</span> to
+          the topic that I am trying to pick up as it forces me to dive deeper
+          to disambiguate my superficial understanding. Also, by putting it
+          online, I hope that this will <span>benefit others</span> as well.
         </p>
       </Project>
       <Project
@@ -97,6 +96,7 @@
           ])
         "
         gitHubRepo="ng-hackernews"
+        websiteUrl="https://hackernews-4ea93.web.app/"
       >
         <p>
           This project started out as a simple project where I want to build a
@@ -131,6 +131,14 @@
           <span>mobile responsive</span> and
           <span><abbr title="Search Engine Optimization">SEO</abbr></span
           >.
+        </p>
+        <p>
+          One thing that I am very proud of is the Google lighthouse score for
+          the website. The home page scored 98 for <span>performance</span>, 95
+          for <span>accessibility</span>, 100 for
+          <span>best practices</span> and 100 for <span>SEO</span> when I last
+          measured. However, I will still improve the website from these aspects
+          when I see the opportunity.
         </p>
       </Project>
       <Project
@@ -213,6 +221,7 @@
           ])
         "
         gitHubRepo="React-Esbuild-Template"
+        websiteUrl="https://react-esbuild-template.vercel.app"
       >
         <p>
           A template project to kickstart my React development. One day while I
@@ -322,6 +331,7 @@
         imgSrc="elm-vite-tailwind.png"
         :stacks="stackDetailsMapper(['elm', 'vite', 'javascript', 'tailwind'])"
         gitHubRepo="elm-vite-template"
+        websiteUrl="https://elm-vite-template.vercel.app/"
       >
         <p>
           A <span>starter</span> template for building <span>robust</span> web
@@ -389,16 +399,15 @@
         websiteUrl="https://data-miner00.github.io/IgniteTheSpark/#"
       >
         <p>
-          Ignite de Spark is the <span>last event</span> that committees of my
-          society of my batch before we retire and this website was made to
-          <span>promote the event</span> by providing every single bits of
-          details of the event and a call for action to a Google form for
-          registration. This website was the
+          Ignite de Spark was the <span>last event</span> that committees of my
+          society had put our heart and soul into before we retire and this
+          website was made to <span>promote the event</span> by providing every
+          single bits of details of the event and a call for action to a Google
+          form for registration. This website was the
           <span>first-ever project</span> that I've done apart from assignments.
-          Hence, the quality are substandard but it was a resounding success for
-          me back then. Unfortunately, due to the unforeseen outbreak of
-          pandemic in our country, the event was canceled and the website had
-          never been to light.
+          Hence, the quality is substandard but I was proud of myself.
+          Unfortunately, due to the unforeseen outbreak of pandemic in the
+          world, the event was canceled and the website had never been to light.
         </p>
       </Project>
 
