@@ -9,15 +9,15 @@ header.header(ref="header")
     .header__nav-links__logo(@click="closeNav")
       img.header__nav-links__logo__img(src="~/assets/images/ck.svg")
     NuxtLink(to="/" @click.native="setActive('h')")
-      .header__nav-links__link(:class="{'active': isActive('h')}") Home
-    NuxtLink(to="/profile" @click.native="setActive('a'); closeNav()")
-      .header__nav-links__link(:class="{'active': isActive('a')}") About
-    NuxtLink(to="/education" @click.native="setActive('e'); closeNav()")
-      .header__nav-links__link(:class="{'active': isActive('e')}") Education
-    NuxtLink(to="/projects" @click.native="setActive('p'); closeNav()")
-      .header__nav-links__link(:class="{'active': isActive('p')}") Projects
-    NuxtLink(to="/career" @click.native="setActive('c'); closeNav()")
-      .header__nav-links__link(:class="{'active': isActive('c')}") Career
+      .header__nav-links__link Home
+    NuxtLink(to="/profile" @click.native="closeNav")
+      .header__nav-links__link About
+    NuxtLink(to="/education" @click.native="closeNav")
+      .header__nav-links__link Education
+    NuxtLink(to="/projects" @click.native="closeNav")
+      .header__nav-links__link Projects
+    NuxtLink(to="/career" @click.native="closeNav")
+      .header__nav-links__link Career
     .header__nav-links__made-by crafted by Shaun #[br] &copy; 2021
 </template>
 
@@ -40,22 +40,11 @@ export default Vue.extend({
     })
   },
   methods: {
-    setActive(pageName: string): void {
-      this.$store.commit('app/setPage', pageName)
-    },
-    isActive(pageName: string): boolean {
-      return this.selectedPage == pageName
-    },
     openNav(): void {
       ;(this.$refs['sidebar'] as HTMLElement).classList.add('pulled-in')
     },
     closeNav(): void {
       ;(this.$refs['sidebar'] as HTMLElement).classList.remove('pulled-in')
-    },
-  },
-  computed: {
-    selectedPage() {
-      return this.$store.state.app.selectedPage
     },
   },
 })
@@ -113,8 +102,8 @@ export default Vue.extend({
       padding: 15px 0
       font-weight: bold
 
-      &.active
-        color: brown
+    a.nuxt-link-exact-active
+      color: brown
 
     &__made-by
       font-size: 0.5em
