@@ -47,7 +47,9 @@ export default Vue.extend({
   margin: 40px auto 0
   color: gray
   &__social
-    display: block
+    display: flex
+    svg
+      width: 25px
 
 @media screen and (min-width: 960px)
   .socials
