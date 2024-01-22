@@ -48,6 +48,8 @@ export default Vue.extend({
   color: gray
   &__social
     display: block
+    svg
+      width: 100%
 
 @media screen and (min-width: 960px)
   .socials

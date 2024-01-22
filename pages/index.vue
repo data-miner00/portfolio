@@ -135,6 +135,11 @@ export default Vue.extend({
       &__social
         display: block
         transition: color .4s
+
+        svg
+          width: 16px
+          height: 16px
+
         &:hover
           color: brown
 
