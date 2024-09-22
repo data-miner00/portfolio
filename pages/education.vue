@@ -32,7 +32,7 @@
           award at Year 2 and Year 3 respectively.
         </p>
         <p>
-          Thoughout the entire course, I have been exposed to various
+          Throughout the entire course, I have been exposed to various
           programming languages such as C++, C#, Java, Python and PHP. I have
           also gained knowledges on UI design, software design, data structures,
           software testing, software quality assurance and software

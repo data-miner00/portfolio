@@ -231,7 +231,7 @@
           the decentralized wallet.
         </p>
         <p>
-          One of tne cryptic errors confronted being
+          One of the cryptic errors confronted being
           <code>Buffer not found</code>. I spent quite some time to rectify the
           issue but to no avail and I gave up eventually. I tried
           <a href="https://vitejs.dev/">Vite</a> but also faced the the same
@@ -372,10 +372,10 @@
         <p>
           The <span>project proposal</span> was made to outline and review all
           the requirements, technology, workflow and design during the initial
-          planning phase that tooks about three months and the actual
+          planning phase that took about three months and the actual
           implementation of the system takes another three months to complete.
           Although the entire process of developing this system is arduous and
-          tiresome, I am flattered that I am rewarded an A- grade for this.
+          tiresome, I am flattered that I was rewarded an A- grade for this.
         </p>
         <p>
           The core feature of this application is the
