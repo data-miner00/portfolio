@@ -84,7 +84,7 @@ import { stackDetailsMapper } from '@/data/utils'
 
 export default Vue.extend({
   head: () => ({
-    title: 'Career',
+    title: 'Career - Shaun Chong',
   }),
   layout: 'detailPage',
   methods: { stackDetailsMapper },

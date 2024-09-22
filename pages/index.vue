@@ -74,7 +74,7 @@ import {
 
 export default Vue.extend({
   head: () => ({
-    title: 'Welcome to my Portfolio',
+    title: 'Shaun Chong',
   }),
   computed: {
     faFacebookF() {

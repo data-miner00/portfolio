@@ -86,7 +86,7 @@ import Vue from 'vue'
 export default Vue.extend({
   layout: 'detailPage',
   head: () => ({
-    title: 'About Me',
+    title: 'About - Shaun Chong',
   }),
   computed: {
     age() {

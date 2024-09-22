@@ -93,7 +93,7 @@ import Vue from 'vue'
 
 export default Vue.extend({
   head: () => ({
-    title: 'Education',
+    title: 'Education - Shaun Chong',
   }),
   layout: 'detailPage',
 })
