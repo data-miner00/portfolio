@@ -1,14 +1,14 @@
 <template lang="pug">
 header.header(ref="header")
   .header__dummy
-  NuxtLink.header__logo(to="/" @click.native="setActive('h')")
+  NuxtLink.header__logo(to="/")
     img.header__logo__img(src="~/assets/images/ck.svg")
   .header__burger(@click="openNav")
     img.header__burger__img(src="~/assets/images/berger.svg")
   .header__nav-links(ref="sidebar")
     .header__nav-links__logo(@click="closeNav")
       img.header__nav-links__logo__img(src="~/assets/images/ck.svg")
-    NuxtLink(to="/" @click.native="setActive('h')")
+    NuxtLink(to="/")
       .header__nav-links__link Home
     NuxtLink(to="/profile" @click.native="closeNav")
       .header__nav-links__link About
