@@ -23,6 +23,12 @@
           <nuxt-link to="/career">
             <div class="home__links__link">working</div>
           </nuxt-link>
+          <a href="https://notes.mumk.dev" target="_blank">
+            <div class="home__links__link">tech</div>
+          </a>
+          <a href="https://blog.mumk.dev" target="_blank">
+            <div class="home__links__link">blog</div>
+          </a>
         </div>
         <div class="home__footer">
           <div class="home__footer__socials">
