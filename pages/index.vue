@@ -5,7 +5,7 @@
         <img
           class="home__logo__img"
           src="~/assets/images/ck.svg"
-          alt="CK Logo"
+          alt="Logo of the site that shows 'CK'"
         />
       </div>
       <div class="wrapper">
@@ -27,36 +27,14 @@
         <div class="home__footer">
           <div class="home__footer__socials">
             <a
+              v-for="(social, index) in socials"
+              :key="index"
               class="home__footer__socials__social"
-              href="https://www.facebook.com/sysdate"
+              :href="social.href"
               target="_blank"
-              title="Facebook profile"
+              :title="social.title"
             >
-              <fa :icon="faFacebookF" />
-            </a>
-            <a
-              class="home__footer__socials__social"
-              href="https://www.linkedin.com/in/chong-mum-khong-343b3b1b0/"
-              target="_blank"
-              title="LinkedIn profile"
-            >
-              <fa :icon="faLinkedinIn" />
-            </a>
-            <a
-              class="home__footer__socials__social"
-              href="https://github.com/data-miner00"
-              target="_blank"
-              title="GitHub profile"
-            >
-              <fa :icon="faGithubAlt" />
-            </a>
-            <a
-              class="home__footer__socials__social"
-              href="https://twitter.com/Has66771004"
-              target="_blank"
-              title="Twitter (X) profile"
-            >
-              <fa :icon="faTwitter" />
+              <fa :icon="social.icon" />
             </a>
           </div>
           <div class="home__footer__craft">crafted by shaun</div>
@@ -81,17 +59,29 @@ export default Vue.extend({
     title: 'Shaun Chong',
   }),
   computed: {
-    faFacebookF() {
-      return faFacebookF
-    },
-    faGithubAlt() {
-      return faGithubAlt
-    },
-    faLinkedinIn() {
-      return faLinkedinIn
-    },
-    faTwitter() {
-      return faTwitter
+    socials() {
+      return [
+        {
+          href: 'https://www.facebook.com/sysdate',
+          icon: faFacebookF,
+          title: 'Facebook profile',
+        },
+        {
+          href: 'https://www.linkedin.com/in/chong-mum-khong-343b3b1b0/',
+          icon: faLinkedinIn,
+          title: 'LinkedIn profile',
+        },
+        {
+          href: 'https://github.com/data-miner00',
+          icon: faGithubAlt,
+          title: 'GitHub profile',
+        },
+        {
+          href: 'https://twitter.com/Has66771004',
+          icon: faTwitter,
+          title: 'Twitter (X) profile',
+        },
+      ]
     },
   },
 })

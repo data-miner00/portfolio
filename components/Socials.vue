@@ -1,13 +1,7 @@
 <template lang="pug">
 .socials
-  a.socials__social(href="https://www.facebook.com/sysdate" target="_blank")
-    fa(:icon="faFacebook")
-  a.socials__social(href="https://github.com/data-miner00" target="_blank")
-    fa(:icon="faGithub")
-  a.socials__social(href="https://www.linkedin.com/in/chong-mum-khong-343b3b1b0/" target="_blank")
-    fa(:icon="faLinkedin")
-  a.socials__social(href="https://twitter.com/Has66771004" target="_blank")
-    fa(:icon="faTwitter")
+  a.socials__social(v-for="(social, index) in socials" :key="index" :href="social.href" target="_blank" :title="social.title")
+    fa(:icon="social.icon")
 </template>
 
 <script lang="ts">
@@ -22,17 +16,29 @@ import {
 
 export default Vue.extend({
   computed: {
-    faFacebook() {
-      return faFacebook
-    },
-    faGithub() {
-      return faGithub
-    },
-    faLinkedin() {
-      return faLinkedin
-    },
-    faTwitter() {
-      return faTwitter
+    socials() {
+      return [
+        {
+          href: 'https://www.facebook.com/sysdate',
+          icon: faFacebook,
+          title: 'Facebook profile',
+        },
+        {
+          href: 'https://www.linkedin.com/in/chong-mum-khong-343b3b1b0/',
+          icon: faLinkedin,
+          title: 'LinkedIn profile',
+        },
+        {
+          href: 'https://github.com/data-miner00',
+          icon: faGithub,
+          title: 'GitHub profile',
+        },
+        {
+          href: 'https://twitter.com/Has66771004',
+          icon: faTwitter,
+          title: 'Twitter (X) profile',
+        },
+      ]
     },
   },
 })
