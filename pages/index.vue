@@ -30,6 +30,7 @@
               class="home__footer__socials__social"
               href="https://www.facebook.com/sysdate"
               target="_blank"
+              title="Facebook profile"
             >
               <fa :icon="faFacebookF" />
             </a>
@@ -37,6 +38,7 @@
               class="home__footer__socials__social"
               href="https://www.linkedin.com/in/chong-mum-khong-343b3b1b0/"
               target="_blank"
+              title="LinkedIn profile"
             >
               <fa :icon="faLinkedinIn" />
             </a>
@@ -44,6 +46,7 @@
               class="home__footer__socials__social"
               href="https://github.com/data-miner00"
               target="_blank"
+              title="GitHub profile"
             >
               <fa :icon="faGithubAlt" />
             </a>
@@ -51,6 +54,7 @@
               class="home__footer__socials__social"
               href="https://twitter.com/Has66771004"
               target="_blank"
+              title="Twitter (X) profile"
             >
               <fa :icon="faTwitter" />
             </a>
