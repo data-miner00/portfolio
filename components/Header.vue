@@ -116,8 +116,7 @@ export default Vue.extend({
       font-weight: bold
 
       svg
-        font-size: 10px
-        color: #666
+        height: 10px
 
     a.nuxt-link-exact-active
       color: brown
