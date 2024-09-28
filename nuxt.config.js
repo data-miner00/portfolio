@@ -4,7 +4,6 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'personal-portfolio',
     htmlAttrs: {
       lang: 'en',
     },
@@ -14,7 +13,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: "Mum Khong's personal portfolio website.",
+        content: "Shaun Chong's personal website.",
       },
     ],
     link: [

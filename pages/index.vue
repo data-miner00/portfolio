@@ -5,7 +5,7 @@
         <img
           class="home__logo__img"
           src="~/assets/images/ck.svg"
-          alt="CK Logo"
+          alt="Logo of the site that shows 'CK'"
         />
       </div>
       <div class="wrapper">
@@ -23,36 +23,24 @@
           <nuxt-link to="/career">
             <div class="home__links__link">working</div>
           </nuxt-link>
+          <a href="https://notes.mumk.dev" target="_blank">
+            <div class="home__links__link">tech</div>
+          </a>
+          <a href="https://blog.mumk.dev" target="_blank">
+            <div class="home__links__link">blog</div>
+          </a>
         </div>
         <div class="home__footer">
           <div class="home__footer__socials">
             <a
+              v-for="(social, index) in socials"
+              :key="index"
               class="home__footer__socials__social"
-              href="https://www.facebook.com/sysdate"
+              :href="social.href"
               target="_blank"
+              :title="social.title"
             >
-              <fa :icon="faFacebookF" />
-            </a>
-            <a
-              class="home__footer__socials__social"
-              href="https://www.linkedin.com/in/chong-mum-khong-343b3b1b0/"
-              target="_blank"
-            >
-              <fa :icon="faLinkedinIn" />
-            </a>
-            <a
-              class="home__footer__socials__social"
-              href="https://github.com/data-miner00"
-              target="_blank"
-            >
-              <fa :icon="faGithubAlt" />
-            </a>
-            <a
-              class="home__footer__socials__social"
-              href="https://twitter.com/Has66771004"
-              target="_blank"
-            >
-              <fa :icon="faTwitter" />
+              <fa :icon="social.icon" />
             </a>
           </div>
           <div class="home__footer__craft">crafted by shaun</div>
@@ -74,20 +62,32 @@ import {
 
 export default Vue.extend({
   head: () => ({
-    title: 'Welcome to my Portfolio',
+    title: 'Shaun Chong',
   }),
   computed: {
-    faFacebookF() {
-      return faFacebookF
-    },
-    faGithubAlt() {
-      return faGithubAlt
-    },
-    faLinkedinIn() {
-      return faLinkedinIn
-    },
-    faTwitter() {
-      return faTwitter
+    socials() {
+      return [
+        {
+          href: 'https://www.facebook.com/sysdate',
+          icon: faFacebookF,
+          title: 'Facebook profile',
+        },
+        {
+          href: 'https://www.linkedin.com/in/chong-mum-khong-343b3b1b0/',
+          icon: faLinkedinIn,
+          title: 'LinkedIn profile',
+        },
+        {
+          href: 'https://github.com/data-miner00',
+          icon: faGithubAlt,
+          title: 'GitHub profile',
+        },
+        {
+          href: 'https://twitter.com/Has66771004',
+          icon: faTwitter,
+          title: 'Twitter (X) profile',
+        },
+      ]
     },
   },
 })

@@ -64,6 +64,10 @@ export default Vue.extend({
 
   &__title
     padding: 0 5%
+
+    [id]
+      scroll-margin-top: 20px
+
   &__subtitle
     padding: 0 5%
     h4

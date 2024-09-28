@@ -1,14 +1,14 @@
 <template lang="pug">
 header.header(ref="header")
   .header__dummy
-  NuxtLink.header__logo(to="/" @click.native="setActive('h')")
+  NuxtLink.header__logo(to="/")
     img.header__logo__img(src="~/assets/images/ck.svg")
   .header__burger(@click="openNav")
     img.header__burger__img(src="~/assets/images/berger.svg")
   .header__nav-links(ref="sidebar")
     .header__nav-links__logo(@click="closeNav")
       img.header__nav-links__logo__img(src="~/assets/images/ck.svg")
-    NuxtLink(to="/" @click.native="setActive('h')")
+    NuxtLink(to="/")
       .header__nav-links__link Home
     NuxtLink(to="/profile" @click.native="closeNav")
       .header__nav-links__link About
@@ -18,11 +18,16 @@ header.header(ref="header")
       .header__nav-links__link Projects
     NuxtLink(to="/career" @click.native="closeNav")
       .header__nav-links__link Career
-    .header__nav-links__made-by crafted by Shaun #[br] &copy; 2021
+    a(href="https://notes.mumk.dev" target="_blank")
+      .header__nav-links__link Tech #[fa(:icon="faExternalLinkSquare")]
+    a(href="https://blog.mumk.dev" target="_blank")
+      .header__nav-links__link Blog #[fa(:icon="faExternalLinkSquare")]
+    .header__nav-links__made-by crafted by Shaun #[br] &copy; {{ year }}
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 
 export default Vue.extend({
   mounted(): void {
@@ -45,6 +50,14 @@ export default Vue.extend({
     },
     closeNav(): void {
       ;(this.$refs['sidebar'] as HTMLElement).classList.remove('pulled-in')
+    },
+  },
+  computed: {
+    faExternalLinkSquare() {
+      return faExternalLinkAlt
+    },
+    year() {
+      return new Date().getFullYear()
     },
   },
 })
@@ -102,6 +115,10 @@ export default Vue.extend({
       padding: 15px 0
       font-weight: bold
 
+      svg
+        font-size: 10px
+        color: #666
+
     a.nuxt-link-exact-active
       color: brown
 
@@ -134,7 +151,7 @@ export default Vue.extend({
       border-left: none
       position: static
       height: fit-content
-      width: 430px
+      width: 530px
       flex-direction: row
       padding: 0
       background: none
