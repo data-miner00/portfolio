@@ -9,7 +9,7 @@
         imgSrc="p4.png"
         :stacks="stackDetailsMapper(['nuxt', 'vue', 'sass', 'typescript'])"
         gitHubRepo="portfolio"
-        websiteUrl="https://mumk.vercel.app/"
+        websiteUrl="https://mumk.dev/"
       >
         <p>
           This project is to build my <span>portfolio website</span>, which is
@@ -40,7 +40,7 @@
           ])
         "
         gitHubRepo="blog"
-        websiteUrl="https://blog-mumk.vercel.app/"
+        websiteUrl="https://blog.mumk.dev/"
       >
         <p>
           I started out building my own blogging website to record down fun
@@ -65,7 +65,7 @@
           stackDetailsMapper(['vue', 'nuxt', 'typescript', 'tailwind', 'sass'])
         "
         gitHubRepo="book"
-        websiteUrl="https://book-dun-three.vercel.app/"
+        websiteUrl="https://book.mumk.dev/"
       >
         <p>
           Book is a project that I use to
@@ -99,7 +99,7 @@
           ])
         "
         gitHubRepo="ng-hackernews"
-        websiteUrl="https://hackernews-4ea93.web.app/"
+        websiteUrl="https://hn.mumk.dev/"
       >
         <p>
           This project started out as a simple project where I want to build a
