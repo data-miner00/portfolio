@@ -21,6 +21,7 @@
           experience.
         </p>
       </Project>
+
       <Project
         name="Personal Blog"
         type="Webpage"
@@ -54,6 +55,7 @@
           language competency improves.
         </p>
       </Project>
+
       <Project
         name="Book"
         type="Webpage"
@@ -81,6 +83,7 @@
           online, I hope that this will <span>benefit others</span> as well.
         </p>
       </Project>
+
       <Project
         name="The Hacker Times"
         type="Web Application"
@@ -110,6 +113,7 @@
           Firebase for the users.
         </p>
       </Project>
+
       <Project
         name="TT Wellness Website"
         type="Webpage"
@@ -141,6 +145,7 @@
           when I see the opportunity.
         </p>
       </Project>
+
       <Project
         name="Positron+"
         type="Web Application"
@@ -173,6 +178,7 @@
           network and I only tested it a local testnet running on my machine.
         </p>
       </Project>
+
       <Project
         name="Avax NFT Minter"
         type="Web Application"
@@ -202,6 +208,7 @@
           NFT minted were stored in Pinata IPFS.
         </p>
       </Project>
+
       <Project
         id="react-esbuild-template"
         name="React ESBuild Template"
@@ -245,6 +252,7 @@
           <span>heavy</span> and <span>opionionated</span>.
         </p>
       </Project>
+
       <Project
         id="react-rescript-template"
         name="React Rescript Template"
@@ -279,6 +287,7 @@
           such as esbuild, Tailwind CSS and the latest version of React.
         </p>
       </Project>
+
       <Project
         id="nuxt-content-template"
         name="Nuxt Content Template"
@@ -298,6 +307,7 @@
         </p>
         <p>This template is using Vue v3 with Composition API and Nuxt v3.</p>
       </Project>
+
       <Project
         name="Starker Regen"
         type="Web Application Template"
@@ -343,138 +353,152 @@
         </p>
       </Project>
 
-      <!-- ----------------------------------------- -->
-      <Project
-        name="E-learning Platform"
-        type="Full-stack Web Application"
-        year="2021"
-        imgSrc="p1.png"
-        :stacks="
-          stackDetailsMapper([
-            'vue',
-            'vuetify',
-            'sass',
-            'firebase',
-            'socket',
-            'typescript',
-            'node',
-          ])
-        "
-        gitHubRepo="leedv2.1"
-      >
-        <p>
-          E-learning Platform for Distanced Collaborative Coding Assignments is
-          a web-application aimed to provide a universal platform for students
-          and lecturers to <span>interact</span> with each other effortlessly
-          for <span>coding-based assignments</span>. This is the final year
-          project of my studies at my university.
-        </p>
-        <p>
-          The <span>project proposal</span> was made to outline and review all
-          the requirements, technology, workflow and design during the initial
-          planning phase that took about three months and the actual
-          implementation of the system takes another three months to complete.
-          Although the entire process of developing this system is arduous and
-          tiresome, I am flattered that I was rewarded an A- grade for this.
-        </p>
-        <p>
-          The core feature of this application is the
-          <span>concurrent code editor</span> that allows students to program
-          together in a group in real-time. It also provides a
-          <span>chatting system</span> for the students to discuss by interact
-          with each other with text messages. Besides, this application has a
-          very strict rule on governing the relationships between different
-          entities such as one student can join many course, one course can have
-          many assignments etc. This is extremely important but the most
-          cumbersome part to implement.
-        </p>
-      </Project>
-      <Project
-        name="Ignite de Spark"
-        type="Webpage"
-        year="2019"
-        imgSrc="p2.png"
-        :stacks="stackDetailsMapper(['html', 'css', 'javascript'])"
-        gitHubRepo="IgniteTheSpark"
-        websiteUrl="https://data-miner00.github.io/IgniteTheSpark/#"
-      >
-        <p>
-          Ignite de Spark was the <span>last event</span> that committees of my
-          society had put our heart and soul into before we retire and this
-          website was made to <span>promote the event</span> by providing every
-          single bits of details of the event and a call for action to a Google
-          form for registration. This website was the
-          <span>first-ever project</span> that I've done apart from assignments.
-          Hence, the quality is substandard but I was proud of myself.
-          Unfortunately, due to the unforeseen outbreak of pandemic in the
-          world, the event was canceled and the website had never been to light.
-        </p>
-      </Project>
+      <div v-show="!isExpanded">
+        <button
+          @click="isExpanded = !isExpanded"
+          class="projects__toggle-button"
+        >
+          Other projects
+        </button>
+      </div>
 
-      <Project
-        name="Covid-19 Dashboard"
-        type="Webpage"
-        year="2021"
-        imgSrc="p5.png"
-        :stacks="
-          stackDetailsMapper([
-            'angular',
-            'bulma',
-            'sass',
-            'typescript',
-            'echarts',
-          ])
-        "
-        gitHubRepo="ng-covid-tracker"
-        websiteUrl="https://ng-covid-tracker.web.app/"
-      >
-        <p>
-          This project is about displaying the latest covid data and trends
-          worldwide all within a single page. Development started on
-          <span>June 2021</span>, after I had my final semester in the
-          university. I came across the covid API by mathdroid and thought it
-          would be great to start a project with it. The application has a
-          section where users can choose a country to view its infection,
-          recover and death case for that particular day with a interactive Pie
-          chart.
-        </p>
-        <p>
-          It went great until early 2022 where data for recovered case was no
-          longer provided. As of 2023, the entire covid API has been
-          <span>discontinued</span> and is no longer available for use. As a
-          result, the site is currently broken and devoid of data. I am plotting
-          to take down the website in the near future.
-        </p>
-      </Project>
-      <Project
-        name="Newtab Remastered"
-        type="Webpage"
-        year="2021"
-        imgSrc="p6.png"
-        :stacks="stackDetailsMapper(['vue', 'less', 'typescript'])"
-        gitHubRepo="newtab-remastered"
-        websiteUrl="https://newtab-remastered.vercel.app/"
-      >
-        <p>
-          As an aspiring developer that is always on the go to learn and build
-          stuffs, I found myself <span>struggling</span> to navigate between the
-          useful sites and resources quickly. To read the docs for TailwindCSS,
-          I will need to open up a new tab, insert the URL manually or Google to
-          navigate to the site. If I want to access Vue.js docs, I will need to
-          repeat the same process. It gets tedious as time goes and sometimes I
-          wonder wouldn't it be phenomenal to have a page that has everything I
-          need inside? That way, I can navigate around with east and less
-          ceremony.
-        </p>
-        <p>
-          This project started out with a intention to replace my browser's new
-          tab page, or become the home page. However, I found myself
-          <span>not using</span> it as much as I thought I would. There are more
-          facets to be improved and implemented before I can consider it useful.
-          Albeit underwhelming, it was a great attempt and I still
-          <span>treasures</span> the things I've learnt during the development.
-        </p>
-      </Project>
+      <div v-show="isExpanded">
+        <Project
+          name="E-learning Platform"
+          type="Full-stack Web Application"
+          year="2021"
+          imgSrc="p1.png"
+          :stacks="
+            stackDetailsMapper([
+              'vue',
+              'vuetify',
+              'sass',
+              'firebase',
+              'socket',
+              'typescript',
+              'node',
+            ])
+          "
+          gitHubRepo="leedv2.1"
+        >
+          <p>
+            E-learning Platform for Distanced Collaborative Coding Assignments
+            is a web-application aimed to provide a universal platform for
+            students and lecturers to <span>interact</span> with each other
+            effortlessly for <span>coding-based assignments</span>. This is the
+            final year project of my studies at my university.
+          </p>
+          <p>
+            The <span>project proposal</span> was made to outline and review all
+            the requirements, technology, workflow and design during the initial
+            planning phase that took about three months and the actual
+            implementation of the system takes another three months to complete.
+            Although the entire process of developing this system is arduous and
+            tiresome, I am flattered that I was rewarded an A- grade for this.
+          </p>
+          <p>
+            The core feature of this application is the
+            <span>concurrent code editor</span> that allows students to program
+            together in a group in real-time. It also provides a
+            <span>chatting system</span> for the students to discuss by interact
+            with each other with text messages. Besides, this application has a
+            very strict rule on governing the relationships between different
+            entities such as one student can join many course, one course can
+            have many assignments etc. This is extremely important but the most
+            cumbersome part to implement.
+          </p>
+        </Project>
+
+        <Project
+          name="Ignite de Spark"
+          type="Webpage"
+          year="2019"
+          imgSrc="p2.png"
+          :stacks="stackDetailsMapper(['html', 'css', 'javascript'])"
+          gitHubRepo="IgniteTheSpark"
+          websiteUrl="https://data-miner00.github.io/IgniteTheSpark/#"
+        >
+          <p>
+            Ignite de Spark was the <span>last event</span> that committees of
+            my society had put our heart and soul into before we retire and this
+            website was made to <span>promote the event</span> by providing
+            every single bits of details of the event and a call for action to a
+            Google form for registration. This website was the
+            <span>first-ever project</span> that I've done apart from
+            assignments. Hence, the quality is substandard but I was proud of
+            myself. Unfortunately, due to the unforeseen outbreak of pandemic in
+            the world, the event was canceled and the website had never been to
+            light.
+          </p>
+        </Project>
+
+        <Project
+          name="Covid-19 Dashboard"
+          type="Webpage"
+          year="2021"
+          imgSrc="p5.png"
+          :stacks="
+            stackDetailsMapper([
+              'angular',
+              'bulma',
+              'sass',
+              'typescript',
+              'echarts',
+            ])
+          "
+          gitHubRepo="ng-covid-tracker"
+          websiteUrl="https://ng-covid-tracker.web.app/"
+        >
+          <p>
+            This project is about displaying the latest covid data and trends
+            worldwide all within a single page. Development started on
+            <span>June 2021</span>, after I had my final semester in the
+            university. I came across the covid API by mathdroid and thought it
+            would be great to start a project with it. The application has a
+            section where users can choose a country to view its infection,
+            recover and death case for that particular day with a interactive
+            Pie chart.
+          </p>
+          <p>
+            It went great until early 2022 where data for recovered case was no
+            longer provided. As of 2023, the entire covid API has been
+            <span>discontinued</span> and is no longer available for use. As a
+            result, the site is currently broken and devoid of data. I am
+            plotting to take down the website in the near future.
+          </p>
+        </Project>
+
+        <Project
+          name="Newtab Remastered"
+          type="Webpage"
+          year="2021"
+          imgSrc="p6.png"
+          :stacks="stackDetailsMapper(['vue', 'less', 'typescript'])"
+          gitHubRepo="newtab-remastered"
+          websiteUrl="https://newtab-remastered.vercel.app/"
+        >
+          <p>
+            As an aspiring developer that is always on the go to learn and build
+            stuffs, I found myself <span>struggling</span> to navigate between
+            the useful sites and resources quickly. To read the docs for
+            TailwindCSS, I will need to open up a new tab, insert the URL
+            manually or Google to navigate to the site. If I want to access
+            Vue.js docs, I will need to repeat the same process. It gets tedious
+            as time goes and sometimes I wonder wouldn't it be phenomenal to
+            have a page that has everything I need inside? That way, I can
+            navigate around with east and less ceremony.
+          </p>
+          <p>
+            This project started out with a intention to replace my browser's
+            new tab page, or become the home page. However, I found myself
+            <span>not using</span> it as much as I thought I would. There are
+            more facets to be improved and implemented before I can consider it
+            useful. Albeit underwhelming, it was a great attempt and I still
+            <span>treasures</span> the things I've learnt during the
+            development.
+          </p>
+        </Project>
+      </div>
     </div>
     <Socials />
   </div>
@@ -490,10 +514,24 @@ export default Vue.extend({
   }),
   layout: 'detailPage',
   methods: { stackDetailsMapper },
+  data: () => ({
+    isExpanded: false,
+  }),
 })
 </script>
 
 <style lang="sass" scoped>
 .projects
   padding: 50px 0
+
+  &__toggle-button
+    display: block
+    margin: 0 auto
+    background: brown
+    color: white
+    border: none
+    padding: 8px 12px
+    cursor: pointer
+    border-radius: 4px
+    font-size: 14px
 </style>
