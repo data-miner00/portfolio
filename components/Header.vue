@@ -19,9 +19,9 @@ header.header(ref="header")
     NuxtLink(to="/career" @click.native="closeNav")
       .header__nav-links__link Career
     a(href="https://notes.mumk.dev" target="_blank")
-      .header__nav-links__link Tech↗
+      .header__nav-links__link Tech #[fa(:icon="faExternalLinkSquare")]
     a(href="https://blog.mumk.dev" target="_blank")
-      .header__nav-links__link Blog↗
+      .header__nav-links__link Blog #[fa(:icon="faExternalLinkSquare")]
     .header__nav-links__made-by crafted by Shaun #[br] &copy; {{ year }}
 </template>
 
@@ -114,6 +114,10 @@ export default Vue.extend({
     &__link
       padding: 15px 0
       font-weight: bold
+
+      svg
+        font-size: 10px
+        color: #666
 
     a.nuxt-link-exact-active
       color: brown
