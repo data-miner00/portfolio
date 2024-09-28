@@ -24,6 +24,72 @@
       </Project>
 
       <Project
+        name="Sway"
+        type="Web Application"
+        year="2024-now"
+        imgSrc="p.png"
+        :stacks="
+          stackDetailsMapper([
+            'dotnet',
+            'csharp',
+            'xunit',
+            'sqlserver',
+            'tailwind',
+            'daisyui',
+            'jquery',
+            'azpipeline',
+          ])
+        "
+        gitHubRepo="Sway"
+      >
+        <p>
+          An educational e-Commerce web application built on .NET Core and C# as
+          I deliberately shift as much logics to the <span>database</span> as
+          possible. I take this opportunity to deep dive into
+          <span>SQL Server's</span> feature such as stored procedures, views,
+          triggers, user defined types and functions. It also helps to sharpen
+          my axe to write efficient queries and learn about database modeling.
+          This project is still under active development.
+        </p>
+      </Project>
+
+      <Project
+        name="Linker"
+        type="Web Application"
+        year="2022-now"
+        imgSrc="p.png"
+        :stacks="
+          stackDetailsMapper([
+            'dotnet',
+            'csharp',
+            'xunit',
+            'sqlserver',
+            'tailwind',
+            'jquery',
+            'signalr',
+            'workflow',
+            'graphql',
+          ])
+        "
+        gitHubRepo="Linker"
+      >
+        <p>
+          Started off as a .NET Console application to
+          <span>store web URLs</span> and attempt to categorize each of the
+          links as there are insurmountable amount of useful web resources in
+          the open internet. Not long after, it has been evolved into a working
+          Web API project and soon MVC project. WPF, GraphQL and Webjob project
+          was also added to compliment the existing implementations.
+        </p>
+        <p>
+          The architecture of the project gradually shifted to behave more like
+          a social media that includes a workspace and chat feature. This is
+          also an ongoing educational project in which I will take more time to
+          explore and develop the features.
+        </p>
+      </Project>
+
+      <Project
         name="Personal Portfolio"
         type="Webpage"
         year="2021, 2023"
@@ -169,39 +235,6 @@
         </p>
       </Project>
 
-      <Project
-        name="Book"
-        type="Webpage"
-        year="2021-2023"
-        imgSrc="p8.png"
-        :stacks="
-          stackDetailsMapper(['vue', 'nuxt', 'typescript', 'tailwind', 'sass'])
-        "
-        gitHubRepo="book"
-        websiteUrl="https://book.mumk.dev/"
-      >
-        <p>
-          Book is a project that I use to
-          <span>document technical topics</span> that I learned in the form of
-          tutorials, notes and cheatsheets. As I am obsessed with learning new
-          stuffs, I am mindful that there are just too much things to learn and
-          it is impossible to keep everything in memory all the time.
-        </p>
-        <p>
-          Hence, I wanted a place to store and manage the info that I've came
-          across so that I can <span>refer</span> them back in the future when
-          needed. This also helps me to have a <span>better picture</span> to
-          the topic that I am trying to pick up as it forces me to dive deeper
-          to disambiguate my superficial understanding. Also, by putting it
-          online, I hope that this will <span>benefit others</span> as well.
-        </p>
-        <p>
-          However, book is deprecated in favour of
-          <NuxtLink to="#notes">notes</NuxtLink> which is having the latest
-          technology and contemporary design.
-        </p>
-      </Project>
-
       <div v-show="!isExpanded">
         <button
           @click="isExpanded = !isExpanded"
@@ -212,6 +245,45 @@
       </div>
 
       <div v-show="isExpanded">
+        <Project
+          name="Book"
+          type="Webpage"
+          year="2021-2023"
+          imgSrc="p8.png"
+          :stacks="
+            stackDetailsMapper([
+              'vue',
+              'nuxt',
+              'typescript',
+              'tailwind',
+              'sass',
+            ])
+          "
+          gitHubRepo="book"
+          websiteUrl="https://book.mumk.dev/"
+        >
+          <p>
+            Book is a project that I use to
+            <span>document technical topics</span> that I learned in the form of
+            tutorials, notes and cheatsheets. As I am obsessed with learning new
+            stuffs, I am mindful that there are just too much things to learn
+            and it is impossible to keep everything in memory all the time.
+          </p>
+          <p>
+            Hence, I wanted a place to store and manage the info that I've came
+            across so that I can <span>refer</span> them back in the future when
+            needed. This also helps me to have a <span>better picture</span> to
+            the topic that I am trying to pick up as it forces me to dive deeper
+            to disambiguate my superficial understanding. Also, by putting it
+            online, I hope that this will <span>benefit others</span> as well.
+          </p>
+          <p>
+            However, book is deprecated in favour of
+            <NuxtLink to="#notes">notes</NuxtLink> which is having the latest
+            technology and contemporary design.
+          </p>
+        </Project>
+
         <Project
           name="Avax NFT Minter"
           type="Web Application"

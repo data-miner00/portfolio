@@ -162,5 +162,37 @@
   "vite": {
     "name": "Vite",
     "imgSrc": "vite.png"
+  },
+  "xunit": {
+    "name": "xUnit",
+    "imgSrc": "xunit.png"
+  },
+  "sqlserver": {
+    "name": "SQL Server",
+    "imgSrc": "sqlserver.png"
+  },
+  "daisyui": {
+    "name": "Daisy UI",
+    "imgSrc": "daisyui.png"
+  },
+  "jquery": {
+    "name": "jQuery",
+    "imgSrc": "jquery.png"
+  },
+  "azpipeline": {
+    "name": "Azure Pipeline",
+    "imgSrc": "azpipeline.png"
+  },
+  "sqlite": {
+    "name": "SQLite",
+    "imgSrc": "sqlite.webp"
+  },
+  "signalr": {
+    "name": "SignalR",
+    "imgSrc": "signalr.png"
+  },
+  "graphql": {
+    "name": "GraphQL",
+    "imgSrc": "graphql.png"
   }
 }
