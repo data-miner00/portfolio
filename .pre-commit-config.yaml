@@ -1,0 +1,7 @@
+repos:
+  - repo: local
+    hooks:
+      - id: typos
+        name: Check typos
+        entry: typos
+        language: system
