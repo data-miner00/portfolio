@@ -1,0 +1,23 @@
+---
+import Container from "@components/Container.astro";
+import Link from "@components/Link.astro";
+import { Image } from 'astro:assets';
+import logo from '../assets/logo.png'
+import logoDark from '../assets/logo-dark.png'
+---
+
+<header>
+  <Container>
+    <div class="flex flex-wrap gap-y-2 justify-between items-center">
+      <Link href="/" underline={false}>
+        <Image loading="eager" width="40" height="40" class="light-logo" src={logo} alt="A logo featuring the initials of Shaun Chong" />
+        <Image loading="eager" width="40" height="40" class="dark-logo" src={logoDark} alt="A logo featuring the initials of Shaun Chong" />
+      </Link>
+      <nav class="flex gap-2">
+        <Link href="/work"> work </Link> /
+        <Link href="/projects"> projects </Link> /
+        <Link href="/shaun-chong-resume.pdf"> résumé </Link>
+      </nav>
+    </div>
+  </Container>
+</header>
