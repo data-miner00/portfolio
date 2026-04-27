@@ -6,9 +6,9 @@ demoURL: https://nuxt-content-template.netlify.app/
 repoURL: https://github.com/data-miner00/nuxt-content-template
 ---
 
-An extremely opinionated template for building Markdown oriented Nuxt websites with Nuxt Content and TailwindCSS. Focus on the writing rather than low-level implementation and configurations.
+A template for building Markdown oriented websites with Nuxt Content and TailwindCSS. Focus on the writing rather than low-level implementation and configurations.
 
-## Motivtation
+## Motivation
 
 - Wanted to build out my new personal website
 - Want Markdown
@@ -44,7 +44,7 @@ The technologies and tools used within this project.
 - Vue utilities
   - Powerful hooks (`@vueuse/core`)
   - Animation (`@vueuse/motion`)
-- 404 Page (the `/resource` url does not exist)
+- 404 Page
 - Ultra-fast loading speed
 - Support for Node 18, 20 and 22
 - Typo checking (need to install from [crates-ci/typos](https://github.com/crate-ci/typos))
@@ -54,11 +54,11 @@ The technologies and tools used within this project.
 
 Example Markdown blog page
 
-![](example.png)
+![Example article page](example.png)
 
 Internationalized Markdown blog page with French
 
-![](example-fr.png)
+![Example article page in French](example-fr.png)
 
 ## Learnings
 

@@ -23,6 +23,7 @@ The secondary goal is to learn how .NET works, hence, asides the core features, 
 - SQL Server
 - Entity Framework
 - Quartz.NET
+- SignalR
 - GitHub Actions CI
 
 ## Features
@@ -41,17 +42,17 @@ The secondary goal is to learn how .NET works, hence, asides the core features, 
 
 **The login interface**
 
-![](login.png)
+![Login page in MVC portal](login.png)
 
 **The listing page**
 
-![](list.png)
+![Page showing list of links](list.png)
 
 ### Web API
 
 The Swagger page
 
-![](swagger-ui.png)
+![Swagger UI for the WebAPI](swagger-ui.png)
 
 ### Command-line Interface
 

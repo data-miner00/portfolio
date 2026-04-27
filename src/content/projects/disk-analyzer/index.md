@@ -39,15 +39,15 @@ The app is simple. At it's core, it is meant to launch in the background with th
 
 Homepage
 
-![](screenshot.png)
+![The homepage showing two available disks with its usage bar](screenshot.png)
 
 Example graph showing disk usage changes in percentage
 
-![](graph.png)
+![A graph showing the change of size in percentage compared to previous day](graph.png)
 
 ## Learnings
 
-This is the first time I use Rust and Tauri in my project. Working with them are surprisingly pleasant despite not having the penchant for the Rust language due to its complexity (?). I learned how to implement internationalization in SvelteKit without using any libraries. I did it MY WAY!
+This is the first time I use Rust and Tauri in my project. Working with them are surprisingly pleasant despite not having the penchant for the Rust language due to its complexity (?). I learned how to implement internationalization in SvelteKit without using any libraries with plain TypeScript files.
 
 ## Future Development
 

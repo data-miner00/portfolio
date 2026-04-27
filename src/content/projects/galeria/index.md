@@ -10,7 +10,7 @@ A self-hosted personal image board for organizing images.
 
 ## Motivation
 
-I love to take photo using my phone but my phone space is limited. It's iPhone and its a pain in the ass. I am planning to offload the images that I took to my PC (its difficult) so that I have some spare space. I wanted an aesthetically pleasing program to organize the images so that I can reminisce and review with intention.
+I love to take photo using my phone but my phone space is limited. I am planning to offload the images that I took to my PC so that I have some spare space. I wanted an aesthetically pleasing program to organize the images so that I can reminisce and review with intention.
 
 Additionally, I wanted to organize images I've collected from the internet as they are a great source of inspiration, knowledge and entertainment. Recently I am trying to figure out about my house innovation and I can use it to collect all relevant images from the internet for my own reference. I am also intereted in photography and will keep any eye-catching shots that I want to integrate to my style.
 
@@ -37,11 +37,11 @@ Additionally, I wanted to organize images I've collected from the internet as th
 
 ## Design
 
-![](overview.jpg)
+![The architectural overview for the project](overview.jpg)
 
 ## Screenshots
 
-![](screenshot.png)
+![Home page showing images in masonry layout](screenshot.png)
 
 ## Learnings
 

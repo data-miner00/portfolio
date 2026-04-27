@@ -8,7 +8,7 @@ status: passive wip
 
 An experimental e-commerce platform written in C# and TSQL. This project is for education purpose only as I intentionally shift as much logics to the database as possible.
 
-## Motivtation
+## Motivation
 
 I am amazed by what SQL Server is able to handle, from data to stored procedures, it seems like the whole ecosystem as a whole. Asides, I am also trying to learn SQL Server in depth so I decide to try out what it is capable of.
 
@@ -17,7 +17,7 @@ I am amazed by what SQL Server is able to handle, from data to stored procedures
 The technologies and tools used within this project.
 
 - C#
-- TSQL/SQL Server
+- T-SQL/SQL Server
 - ASP.NET Core MVC
 - TailwindCSS/DaisyUI
 - jQuery
