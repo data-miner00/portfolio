@@ -10,7 +10,9 @@ An experimental e-commerce platform written in C# and TSQL. This project is for 
 
 ## Motivation
 
-I am amazed by what SQL Server is able to handle, from data to stored procedures, it seems like the whole ecosystem as a whole. Asides, I am also trying to learn SQL Server in depth so I decide to try out what it is capable of.
+I am amazed by what SQL Server is capable of, so I decide to try out to write as much logics as possible directly in the SQL Server.
+
+Asides, it is also an opportunity for me to learn SQL Server in depth for topics such as joins, common table expressions, stored procedure, table hints, concurrency and performance optimizations.
 
 ## Tech
 
@@ -34,7 +36,7 @@ The architecture currently is very simple. It is just a MVC app calling to the S
 
 ## Learnings
 
-Having strict data integrity is good, but it restricts us from catering other feature that needed some leeway. I also wrote a Data generator with Bogus to seed the database or output as SQL script.
+Having strict data integrity is good, but it restricts us from catering other feature that needed some leeway. I learned a lot about SQL Server and SQL in general along the way. I also wrote a Data generator with Bogus to seed the database or output as SQL script.
 
 ## Future Development
 
