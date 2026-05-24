@@ -85,3 +85,37 @@ html #back-to-top {
 html.scrolled #back-to-top {
   @apply opacity-100 pointer-events-auto;
 }
+
+/* Lightbox styles */
+.zoom-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+.zoom-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.zoom-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.zoom-overlay.active img {
+  cursor: zoom-out;
+}
+
+.zoomable-img {
+  cursor: zoom-in;
+  transition: transform 0.3s;
+}
